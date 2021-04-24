@@ -1,0 +1,76 @@
+{
+  "name": "@xunnamius/types",
+  "version": "1.0.0",
+  "description": "Various generic utility types and typed functions for TypeScript projects",
+  "keywords": [
+    "type",
+    "types",
+    "typescript",
+    "ergodark",
+    "next",
+    "ts",
+    "utility",
+    "helper"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xunnamius/typescript-types"
+  },
+  "license": "Unlicense",
+  "author": "Xunnamius",
+  "sideEffects": false,
+  "main": "dist/modules/index.js",
+  "module": "dist/modules/index.js",
+  "types": "dist/modules/index.d.ts",
+  "files": [
+    "/dist",
+    "/LICENSE",
+    "/package.json",
+    "/README.md"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc --project tsconfig.types.json && babel src --extensions .ts --out-dir dist/modules",
+    "check-types": "command -v unbuffer >/dev/null && (unbuffer tsc; unbuffer eslint .) | less -R -FX || (tsc; eslint .)",
+    "clean": "rm -rf dist",
+    "list-tasks": "npm run",
+    "prepublishOnly": "npm run build",
+    "postpublish": "npm run clean",
+    "publishGuard": "npx sort-package-json && npm run check-types",
+    "repl": "command -v rlwrap >/dev/null && rlwrap npx -p @babel/core -p @babel/node babel-node",
+    "test": "npm run check-types"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-decorators": "^7.13.15",
+    "@babel/plugin-proposal-export-default-from": "^7.12.13",
+    "@babel/plugin-proposal-function-bind": "^7.12.13",
+    "@babel/plugin-proposal-json-strings": "^7.13.8",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.13.8",
+    "@babel/plugin-proposal-numeric-separator": "^7.12.13",
+    "@babel/plugin-proposal-optional-chaining": "^7.13.12",
+    "@babel/plugin-proposal-throw-expressions": "^7.12.13",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/confusing-browser-globals": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-source-map-support": "^2.1.3",
+    "confusing-browser-globals": "^1.0.10",
+    "eslint": "^7.25.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.5",
+    "eslint-plugin-react": "^7.23.2",
+    "source-map-support": "^0.5.19",
+    "type-fest": "^1.0.2",
+    "typescript": "^4.2.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
