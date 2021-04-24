@@ -45,7 +45,7 @@ monorepo is based),
 For general TypeScript utilities:
 
 ```bash
-npm install --save-dev type-fest @xunnamius/types
+npm install --save-dev @xunnamius/types
 ```
 
 For general _and_ [next](https://github.com/vercel/next.js)-specific TypeScript
@@ -53,7 +53,7 @@ utilities:
 
 ```bash
 # This command installs @xunnamius/types automatically
-npm install --save-dev type-fest @xunnamius/next-types
+npm install --save-dev @xunnamius/next-types
 ```
 
 For general _and_ [jest](https://github.com/vercel/next.js)-specific TypeScript
@@ -61,7 +61,7 @@ utilities:
 
 ```bash
 # This command installs @xunnamius/types automatically
-npm install --save-dev type-fest @xunnamius/jest-types
+npm install --save-dev @xunnamius/jest-types
 ```
 
 ## Usage
