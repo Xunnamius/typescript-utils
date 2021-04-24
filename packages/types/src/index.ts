@@ -6,7 +6,7 @@ import type { JsonObject } from 'type-fest';
  * `source` and `flags` properties. This type represents a serialized regular
  * expression with respect to those properties.
  */
-export type JsonRegExp = { source: string; flags: string };
+export type JsonRegExp = { source: string; flags?: string };
 
 /**
  * Generic success JSON result object.
