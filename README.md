@@ -61,8 +61,8 @@ const status: HttpStatusCode = 404;
 
 ## Documentation
 
-See [each package][5] for information on the types they make available. Further
-documentation can be found under [`docs/`][docs].
+See [each package][5] for information on the types they make available and
+further documentation.
 
 ### License
 
@@ -100,7 +100,6 @@ information.
   https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
   'This repo practices continuous integration and deployment!'
 [link-semantic-release]: https://github.com/semantic-release/semantic-release
-[docs]: docs
 [choose-new-issue]:
   https://github.com/xunnamius/typescript-utils/issues/new/choose
 [pr-compare]: https://github.com/xunnamius/typescript-utils/compare
