@@ -11,12 +11,44 @@ export type JsonRegExp = { source: string; flags?: string };
 /**
  * Generic success JSON result object.
  */
-export type JsonSuccess = JsonObject & { success: true };
+export interface JsonSuccess extends JsonObject {
+  success: true;
+}
 
 /**
  * Generic failure JSON result object.
  */
-export type JsonError = JsonObject & { message: string; success: false };
+export interface JsonError extends JsonObject {
+  message: string;
+  success: false;
+}
+
+/**
+ * A no-op that forces the compiler not to infer the value of a generic
+ * parameter. Useful for type hinting and enforcing typechecking with generics.
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type NoInfer<T> = [T][T extends any ? 0 : never];
+
+/**
+ * Represents any object key/index type.
+ */
+export declare type AnyKey = string | number | symbol;
+
+/**
+ * Represents any function type.
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export declare type AnyFunction = (...args: any[]) => unknown;
+
+/**
+ * Represents any class.
+ */
+export interface AnyClass {
+  prototype: unknown;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  new (...args: any[]): unknown;
+}
 
 /**
  * All valid HTTP status codes and several bespoke ones, including the
