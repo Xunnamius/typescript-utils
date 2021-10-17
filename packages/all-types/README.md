@@ -18,51 +18,34 @@
 
 <!-- prettier-ignore-end -->
 
-# @xunnamius/next-types
+# @xunnamius/all-types
 
-<!-- TODO: -->
+This package is an amalgum of the following packages:
 
-- [Install][1]
-- [Usage][2]
-- [Type Glossary][3]
-- [Function Glossary][4]
-- [Documentation][5]
-- [Contributing and Support][6]
-
----
-
-This package contains several TypeScript utility types and helper functions for
-use with [Next.js][7]-based projects.
+[@xunnamius/types][1]\
+[@xunnamius/next-types][2]\
+[@xunnamius/jest-types][3]
 
 ## Install
 
 ```bash
-npm install --save-dev @xunnamius/next-types
+npm install --save-dev @xunnamius/all-types
 ```
 
 ## Usage
 
-<!-- TODO: -->
-
 You can use this library's types in your TypeScript projects like so:
 
 ```TypeScript
-import type { X } from '@xunnamius/next-types'
+import type { HttpStatusCode } from '@xunnamius/all-types'
 
-const x: X = 'y';
+const status: HttpStatusCode = 404;
 ```
-
-## Type Glossary
-
-The following types are available: (none yet)
-
-## Function Glossary
-
-The following functions are available: (none yet)
 
 ## Documentation
 
-Further documentation can be found under [`docs/`][docs].
+See [each sub-package listed above][4] for information on the types this package
+makes available. Further documentation can be found under [`docs/`][docs].
 
 ### License
 
@@ -99,7 +82,7 @@ information.
   'Is this package well-tested?'
 [link-codecov]: https://codecov.io/gh/Xunnamius/typescript-utils
 [badge-license]:
-  https://img.shields.io/npm/l/@xunnamius/next-types
+  https://img.shields.io/npm/l/@xunnamius/all-types
   "This package's source license"
 [link-license]: https://github.com/Xunnamius/typescript-utils/blob/main/LICENSE
 [badge-fossa]:
@@ -108,19 +91,19 @@ information.
 [link-fossa]:
   https://app.fossa.com/projects/custom+27276%2Fgit@github.com:Xunnamius%2Ftypescript-utils.git
 [badge-npm]:
-  https://api.ergodark.com/badges/npm-pkg-version/@xunnamius/next-types
+  https://api.ergodark.com/badges/npm-pkg-version/@xunnamius/all-types
   'Install this package using npm or yarn!'
-[link-npm]: https://www.npmjs.com/package/@xunnamius/next-types
+[link-npm]: https://www.npmjs.com/package/@xunnamius/all-types
 [badge-semantic-release]:
   https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
   'This repo practices continuous integration and deployment!'
 [link-semantic-release]: https://github.com/semantic-release/semantic-release
-[badge-size]: https://badgen.net/bundlephobia/minzip/@xunnamius/next-types
+[badge-size]: https://badgen.net/bundlephobia/minzip/@xunnamius/all-types
 [badge-tree-shaking]:
-  https://badgen.net/bundlephobia/tree-shaking/@xunnamius/next-types
+  https://badgen.net/bundlephobia/tree-shaking/@xunnamius/all-types
   'Is this package optimized for Webpack?'
 [link-bundlephobia]:
-  https://bundlephobia.com/result?p=@xunnamius/next-types
+  https://bundlephobia.com/result?p=@xunnamius/all-types
   'Package size (minified and gzipped)'
 [package-json]: package.json
 [docs]: docs
@@ -129,10 +112,7 @@ information.
 [pr-compare]: https://github.com/xunnamius/typescript-utils/compare
 [contributing]: CONTRIBUTING.md
 [support]: .github/SUPPORT.md
-[1]: #install
-[2]: #usage
-[3]: #type-glossary
-[4]: #function-glossary
-[5]: #documentation
-[6]: #contributing-and-support
-[7]: https://nextjs.org/
+[1]: https://www.npmjs.com/package/@xunnamius/types
+[2]: https://www.npmjs.com/package/@xunnamius/next-types
+[3]: https://www.npmjs.com/package/@xunnamius/jest-types
+[4]: #xunnamiusall-types
