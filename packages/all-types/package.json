@@ -1,7 +1,7 @@
 {
-  "name": "@xunnamius/next-types",
+  "name": "@xunnamius/all-types",
   "version": "1.0.0",
-  "description": "Various TypeScript utility types and typed functions for Next.js-based projects",
+  "description": "A unified entry point for various TypeScript utility types and typed functions",
   "keywords": [
     "type",
     "types",
@@ -9,7 +9,9 @@
     "ergodark",
     "xunnamius",
     "next",
-    "nextjs",
+    "jest",
+    "test",
+    "unit",
     "ts",
     "utility",
     "helper"
@@ -43,9 +45,6 @@
     "build-dist": "npm run clean && tsc --project tsconfig.types.json && babel src --extensions .ts --out-dir dist",
     "build-docs": "if [ -r ./next.config.js ]; then typedoc --plugin typedoc-plugin-markdown --out docs --readme none lib src test types external-scripts --exclude '**/*.test.*' --exclude external-scripts/bin; else ENTRY=`node -e 'console.log((x => typeof x==\"string\"?x:x.default)(require(\"./package.json\").exports[\".\"]).replace(/\\.\\/dist\\/(.+)\\.[a-zA-Z0-9]+$/, \"./src/$1.ts\"))'` && echo 'Entry file:' \"$ENTRY\" && typedoc --plugin typedoc-plugin-markdown --out docs --readme none $ENTRY && find docs -name '*.md' -exec sed -i -e 's/Project: //g' {} + && sed -i -e 1,4d docs/README.md; fi && find docs -name '*.md' -exec sed -i -e 's/`__namedParameters`/`\\(destructured\\)`/g' {} + && find docs -name '*.md' -exec sed -i -E 's/`__namedParameters\\.([^`]+)`/`\\({ \\1 }\\)`/g' {} +",
     "list-tasks": "node -e 'console.log(Object.keys(require(\"./package.json\").scripts).join(\"\\n\"))'"
-  },
-  "peerDependencies": {
-    "next": ">=9"
   },
   "engines": {
     "node": ">=12"
