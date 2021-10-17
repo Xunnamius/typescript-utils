@@ -13,6 +13,7 @@
 - [HttpStatusCode][6]
 - [JsonRegExp][7]
 - [NoInfer][8]
+- [WithConfig][9]
 
 ## Type aliases
 
@@ -38,7 +39,7 @@ Represents any function type.
 
 #### Defined in
 
-[index.ts:42][9]
+[types/src/index.ts:42][10]
 
 ---
 
@@ -50,7 +51,7 @@ Represents any object key/index type.
 
 #### Defined in
 
-[index.ts:36][10]
+[types/src/index.ts:36][11]
 
 ---
 
@@ -71,7 +72,7 @@ HTTP status code 555.
 
 #### Defined in
 
-[index.ts:57][11]
+[types/src/index.ts:57][12]
 
 ---
 
@@ -93,7 +94,7 @@ those properties.
 
 #### Defined in
 
-[index.ts:9][12]
+[types/src/index.ts:9][13]
 
 ---
 
@@ -112,7 +113,26 @@ Useful for type hinting and enforcing typechecking with generics.
 
 #### Defined in
 
-[index.ts:31][13]
+[types/src/index.ts:31][14]
+
+---
+
+### WithConfig
+
+Ƭ **WithConfig**<`T`>: `T` & { `config?`: `PageConfig` }
+
+This type is used to show a NextPage or NextApiHandler exports a `Config`
+object.
+
+#### Type parameters
+
+| Name | Type                                   |
+| :--- | :------------------------------------- |
+| `T`  | extends `NextPage` \| `NextApiHandler` |
+
+#### Defined in
+
+[next-types/src/types.ts:7][15]
 
 [1]: interfaces/AnyClass.md
 [2]: interfaces/JsonError.md
@@ -122,13 +142,16 @@ Useful for type hinting and enforcing typechecking with generics.
 [6]: README.md#httpstatuscode
 [7]: README.md#jsonregexp
 [8]: README.md#noinfer
-[9]:
-  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L42
+[9]: README.md#withconfig
 [10]:
-  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L36
+  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L42
 [11]:
-  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L57
+  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L36
 [12]:
-  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L9
+  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L57
 [13]:
+  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L9
+[14]:
   https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L31
+[15]:
+  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/next-types/src/types.ts#L7

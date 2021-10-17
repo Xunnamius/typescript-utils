@@ -1,4 +1,4 @@
-[@xunnamius/types][1] / JsonError
+[@xunnamius/all-types][1] / JsonError
 
 # Interface: JsonError
 
@@ -25,7 +25,7 @@ Generic failure JSON result object.
 
 #### Defined in
 
-[index.ts:22][4]
+[types/src/index.ts:22][4]
 
 ---
 
@@ -35,7 +35,7 @@ Generic failure JSON result object.
 
 #### Defined in
 
-[index.ts:23][5]
+[types/src/index.ts:23][5]
 
 [1]: ../README.md
 [2]: JsonError.md#message

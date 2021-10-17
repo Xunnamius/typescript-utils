@@ -1,4 +1,4 @@
-[@xunnamius/types][1] / AnyClass
+[@xunnamius/all-types][1] / AnyClass
 
 # Interface: AnyClass
 
@@ -28,7 +28,7 @@ Represents any class.
 
 #### Defined in
 
-[index.ts:50][4]
+[types/src/index.ts:50][4]
 
 ## Properties
 
@@ -38,7 +38,7 @@ Represents any class.
 
 #### Defined in
 
-[index.ts:48][5]
+[types/src/index.ts:48][5]
 
 [1]: ../README.md
 [2]: AnyClass.md#constructor

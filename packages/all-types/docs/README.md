@@ -13,6 +13,11 @@
 - [HttpStatusCode][6]
 - [JsonRegExp][7]
 - [NoInfer][8]
+- [WithConfig][9]
+
+### Functions
+
+- [asMockedFunction][10]
 
 ## Type aliases
 
@@ -38,7 +43,7 @@ Represents any function type.
 
 #### Defined in
 
-[index.ts:42][9]
+[types/src/index.ts:42][11]
 
 ---
 
@@ -50,7 +55,7 @@ Represents any object key/index type.
 
 #### Defined in
 
-[index.ts:36][10]
+[types/src/index.ts:36][12]
 
 ---
 
@@ -71,7 +76,7 @@ HTTP status code 555.
 
 #### Defined in
 
-[index.ts:57][11]
+[types/src/index.ts:57][13]
 
 ---
 
@@ -93,7 +98,7 @@ those properties.
 
 #### Defined in
 
-[index.ts:9][12]
+[types/src/index.ts:9][14]
 
 ---
 
@@ -112,7 +117,70 @@ Useful for type hinting and enforcing typechecking with generics.
 
 #### Defined in
 
-[index.ts:31][13]
+[types/src/index.ts:31][15]
+
+---
+
+### WithConfig
+
+Ƭ **WithConfig**<`T`>: `T` & { `config?`: `PageConfig` }
+
+This type is used to show a NextPage or NextApiHandler exports a `Config`
+object.
+
+#### Type parameters
+
+| Name | Type                                   |
+| :--- | :------------------------------------- |
+| `T`  | extends `NextPage` \| `NextApiHandler` |
+
+#### Defined in
+
+[next-types/src/types.ts:7][16]
+
+## Functions
+
+### asMockedFunction
+
+▸ **asMockedFunction**<`T`>(): `jest.MockedFunction`<`T`>
+
+Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
+
+#### Type parameters
+
+| Name | Type                              |
+| :--- | :-------------------------------- |
+| `T`  | extends [`AnyFunction`][4]`never` |
+
+#### Returns
+
+`jest.MockedFunction`<`T`>
+
+#### Defined in
+
+[jest-types/src/utils.ts:7][17]
+
+▸ **asMockedFunction**<`T`>(`fn`): `jest.MockedFunction`<`T`>
+
+#### Type parameters
+
+| Name | Type                       |
+| :--- | :------------------------- |
+| `T`  | extends [`AnyFunction`][4] |
+
+#### Parameters
+
+| Name | Type |
+| :--- | :--- |
+| `fn` | `T`  |
+
+#### Returns
+
+`jest.MockedFunction`<`T`>
+
+#### Defined in
+
+[jest-types/src/utils.ts:8][18]
 
 [1]: interfaces/AnyClass.md
 [2]: interfaces/JsonError.md
@@ -122,13 +190,21 @@ Useful for type hinting and enforcing typechecking with generics.
 [6]: README.md#httpstatuscode
 [7]: README.md#jsonregexp
 [8]: README.md#noinfer
-[9]:
-  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L42
-[10]:
-  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L36
+[9]: README.md#withconfig
+[10]: README.md#asmockedfunction
 [11]:
-  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L57
+  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L42
 [12]:
-  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L9
+  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L36
 [13]:
+  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L57
+[14]:
+  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L9
+[15]:
   https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/types/src/index.ts#L31
+[16]:
+  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/next-types/src/types.ts#L7
+[17]:
+  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/jest-types/src/utils.ts#L7
+[18]:
+  https://github.com/Xunnamius/typescript-utils/blob/f48970b/packages/jest-types/src/utils.ts#L8

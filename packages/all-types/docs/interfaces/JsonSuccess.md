@@ -1,4 +1,4 @@
-[@xunnamius/types][1] / JsonSuccess
+[@xunnamius/all-types][1] / JsonSuccess
 
 # Interface: JsonSuccess
 
@@ -24,7 +24,7 @@ Generic success JSON result object.
 
 #### Defined in
 
-[index.ts:15][3]
+[types/src/index.ts:15][3]
 
 [1]: ../README.md
 [2]: JsonSuccess.md#success
