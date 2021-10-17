@@ -2,6 +2,7 @@
   "name": "typescript-utils",
   "workspaces": [
     "packages/types",
+    "packages/all-types",
     "packages/jest-types",
     "packages/next-types"
   ],
