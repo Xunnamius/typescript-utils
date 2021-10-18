@@ -25,6 +25,7 @@
 - [Install][1]
 - [Usage][2]
 - [Type Glossary][3]
+  - [WithConfig][8]
 - [Function Glossary][4]
 - [Documentation][5]
 - [Contributing and Support][6]
@@ -42,19 +43,37 @@ npm install --save-dev @xunnamius/next-types
 
 ## Usage
 
-<!-- TODO: -->
-
 You can use this library's types in your TypeScript projects like so:
 
 ```TypeScript
-import type { X } from '@xunnamius/next-types'
+import type { NextApiHandler } from 'next';
+import type { WithConfig } from '@xunnamius/next-types';
 
-const x: X = 'y';
+// ...
+
+const handler: WithConfig<NextApiHandler> = getHandler();
 ```
 
 ## Type Glossary
 
-The following types are available: (none yet)
+In addition to those provided by [@xunnamius/types][9], this package makes the
+following types are available:
+
+- [WithConfig][8]
+
+### WithConfig
+
+This type is used to show a `NextPage` or `NextApiHandler` exports a `Config`
+object.
+
+```typescript
+import * as EndpointHandler from 'universe/pages/api/your-endpoint';
+import type { WithConfig } from '@xunnamius/next-types';
+
+const endpointHandler: WithConfig<typeof EndpointHandler.default> =
+  EndpointHandler.default;
+endpointHandler.config = EndpointHandler.config;
+```
 
 ## Function Glossary
 
@@ -136,3 +155,5 @@ information.
 [5]: #documentation
 [6]: #contributing-and-support
 [7]: https://nextjs.org/
+[8]: #withconfig
+[9]: ../types

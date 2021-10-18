@@ -26,6 +26,7 @@
 - [Usage][2]
 - [Type Glossary][3]
 - [Function Glossary][4]
+  - [asMockedFunction][8]
 - [Documentation][5]
 - [Contributing and Support][6]
 
@@ -42,8 +43,6 @@ npm install --save-dev @xunnamius/jest-types
 
 ## Usage
 
-<!-- TODO: -->
-
 You can use this library's types in your TypeScript projects like so:
 
 ```TypeScript
@@ -58,7 +57,48 @@ The following types are available: (none yet)
 
 ## Function Glossary
 
-The following functions are available: (none yet)
+The following functions are available:
+
+- [asMockedFunction][8]
+
+### asMockedFunction
+
+This function returns `fn` or a function type `T` wrapped with Jest mock type
+definitions via `jest.fn()`.
+
+```typescript
+import execa from 'execa';
+import debugFactory from 'debug';
+
+import type { Debugger } from 'debug';
+import type { ExecaChildProcess } from 'execa';
+
+// ...
+
+const mockedExeca = asMockedFunction(execa);
+const mockedDebug = asMockedFunction<Debugger>();
+
+// ...
+
+beforeEach(() => {
+  mockedDebug.extend =
+    asMockedFunction<Debugger['extend']>().mockReturnValue(mockedDebug);
+  asMockedFunction(debugFactory).mockReturnValue(mockedDebug);
+});
+
+// ...
+
+mockedExeca.mockImplementation(
+  () =>
+    Promise.resolve({
+      /* ... */
+    }) as ExecaChildProcess<Buffer>
+);
+
+// ...
+
+expect(mockedDebug).toBeCalledWith(expect.stringContaining('failed!'));
+```
 
 ## Documentation
 
@@ -136,3 +176,4 @@ information.
 [5]: #documentation
 [6]: #contributing-and-support
 [7]: https://jestjs.io/
+[8]: #asmockedfunction

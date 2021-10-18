@@ -30,8 +30,8 @@
   - [AnyKey][8]
   - [AnyFunction][9]
   - [AnyClass][10]
-- [Function Glossary][11]
   - [NoInfer][12]
+- [Function Glossary][11]
 - [Documentation][13]
 - [Contributing and Support][14]
 
@@ -67,6 +67,7 @@ The following types are available:
 - [AnyKey][8]
 - [AnyFunction][9]
 - [AnyClass][10]
+- [NoInfer][12]
 
 ### JsonRegExp
 
@@ -165,15 +166,9 @@ const class1: AnyClass = class {
 };
 ```
 
-## Function Glossary
-
-The following functions are available:
-
-- [NoInfer][12]
-
 ### NoInfer
 
-This function prevents the compiler from automatically inferring a generic
+This type prevents the compiler from automatically inferring a generic
 parameter's type by [taking advantage of conditional types that depend on an
 unresolved generic type parameter][17], ensuring the compiler cannot choose an
 inference candidate and is forced to return the parameter's default value
@@ -202,6 +197,10 @@ See also:
 - [https://github.com/Microsoft/TypeScript/issues/14829][18]
 - [https://www.typescriptlang.org/docs/handbook/2/generics.html#hello-world-of-generics][19]
 - [https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-3.html#generic-parameter-defaults][20]
+
+## Function Glossary
+
+The following functions are available: (none yet)
 
 ## Documentation
 
