@@ -110,8 +110,8 @@ information.
 [choose-new-issue]:
   https://github.com/xunnamius/typescript-utils/issues/new/choose
 [pr-compare]: https://github.com/xunnamius/typescript-utils/compare
-[contributing]: CONTRIBUTING.md
-[support]: .github/SUPPORT.md
+[contributing]: /CONTRIBUTING.md
+[support]: /.github/SUPPORT.md
 [1]: https://www.npmjs.com/package/@xunnamius/types
 [2]: https://www.npmjs.com/package/@xunnamius/next-types
 [3]: https://www.npmjs.com/package/@xunnamius/jest-types
