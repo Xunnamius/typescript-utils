@@ -23,29 +23,33 @@ itself][2], or [TypeScript itself][3].
 
 ## Install
 
-For general TypeScript utilities:
+[@xunnamius/types][6]: for general TypeScript utilities:
 
 ```bash
 npm install --save-dev @xunnamius/types
 ```
 
-For general _and_ [next][4]-specific TypeScript utilities:
+[@xunnamius/next-types][7]: for general and [next][4]-specific TypeScript
+utilities:
 
 ```bash
-# This command installs @xunnamius/types automatically
+# This package comes with @xunnamius/types baked in
 npm install --save-dev @xunnamius/next-types
 ```
 
-For general _and_ [jest][4]-specific TypeScript utilities:
+[@xunnamius/jest-types][8]: for general and [jest][4]-specific TypeScript
+utilities:
 
 ```bash
-# This command installs @xunnamius/types automatically
+# This package comes with @xunnamius/types baked in
 npm install --save-dev @xunnamius/jest-types
 ```
 
-For _all_ TypeScript utilities combined into a single package:
+[@xunnamius/all-types][9]: for _all of the above_ TypeScript utilities in one
+package:
 
 ```bash
+# This package comes with all @xunnamius/*-types packages baked in
 npm install --save-dev @xunnamius/all-types
 ```
 
@@ -110,3 +114,7 @@ information.
 [3]: https://github.com/sindresorhus/type-fest#built-in-types
 [4]: https://github.com/vercel/next.js
 [5]: /packages
+[6]: packages/types
+[7]: packages/next-types
+[8]: packages/jest-types
+[9]: packages/all-types
