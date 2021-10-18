@@ -45,14 +45,12 @@ contribution 🎉, your efforts are greatly appreciated! 🙌🏿
   guidelines
 - Issues that go for an extended period without activity are subject to closure
 
-[1]:
-  https://isitmaintained.com/badge/resolution/Xunnamius/next-test-api-route-handler.svg
+[1]: https://isitmaintained.com/badge/resolution/Xunnamius/typescript-utils.svg
 [2]:
-  https://isitmaintained.com/project/Xunnamius/next-test-api-route-handler
+  https://isitmaintained.com/project/Xunnamius/typescript-utils
   'Average time to resolve an issue'
-[3]:
-  https://isitmaintained.com/badge/open/Xunnamius/next-test-api-route-handler.svg
-[4]: https://github.com/Xunnamius/next-test-api-route-handler/issues?q=
+[3]: https://isitmaintained.com/badge/open/Xunnamius/typescript-utils.svg
+[4]: https://github.com/Xunnamius/typescript-utils/issues?q=
 [5]:
   https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments
-[6]: https://github.com/Xunnamius/next-test-api-route-handler/issues/new/choose
+[6]: https://github.com/Xunnamius/typescript-utils/issues/new/choose
