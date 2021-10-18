@@ -29,7 +29,6 @@ module.exports = require('@xunnamius/conventional-changelog-projector')({
   gitRawCommitsOpts: {
     // ? Used to ignore changes in other packages
     // ? See: https://github.com/sindresorhus/dargs#usage
-    '--': getExcludedDirs('..', pkgBasename),
-    debug: console.log
+    '--': getExcludedDirs('..', pkgBasename)
   }
 });
