@@ -6,6 +6,7 @@ build
 .vscode
 .vercel
 .env
+.npmrc
 external-scripts/bin
 next-env.d.ts
 node_modules
