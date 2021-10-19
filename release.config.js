@@ -13,9 +13,22 @@ const updateChangelog =
 
 debug(`will update changelog: ${updateChangelog ? 'yes' : 'no'}`);
 
-const { changelogTitle, parserOpts, writerOpts } = require('./conventional.config');
+const {
+  changelogTitle,
+  parserOpts,
+  writerOpts,
+  options: { lernaPackage: targetPkgName },
+  gitRawCommitsOpts: { '--': gitLogPathspecs }
+} = require('./conventional.config');
+
+debug('monorepo release target: %O', targetPkgName);
+debug('monorepo pathspecs: %O', gitLogPathspecs);
 
 module.exports = {
+  tagFormat: `${targetPkgName}@\${version}`,
+  gitLogOptions: {
+    path: gitLogPathspecs
+  },
   branches: [
     '+([0-9])?(.{+([0-9]),x}).x',
     'main',
