@@ -37,10 +37,11 @@
     "@types/debug": "^4.1.7",
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.1",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
+    "@types/webpack": "^5.28.0",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
     "@xunnamius/conventional-changelog-projector": "^1.1.1",
-    "babel-jest": "^27.3.0",
+    "babel-jest": "^27.3.1",
     "babel-loader": "^8.2.2",
     "babel-plugin-add-import-extension": "^1.6.0",
     "babel-plugin-explicit-exports-references": "^1.0.1",
@@ -57,9 +58,9 @@
     "eslint-plugin-jest": "^25.2.2",
     "execa": "^5.1.1",
     "husky": "^7.0.2",
-    "jest": "^27.3.0",
-    "jest-circus": "^27.3.0",
-    "jest-extended": "^1.0.0",
+    "jest": "^27.3.1",
+    "jest-circus": "^27.3.1",
+    "jest-extended": "^1.1.0",
     "lint-staged": "^11.2.3",
     "prettier": "^2.4.1",
     "remark-cli": "^10.0.0",
@@ -85,6 +86,9 @@
     "type-fest": "^2.5.1",
     "typedoc": "^0.22.6",
     "typedoc-plugin-markdown": "^3.11.3",
-    "typescript": "4.4.x"
+    "typescript": "4.4.x",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-node-externals": "^3.0.0"
   }
 }
