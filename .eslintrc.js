@@ -1,6 +1,8 @@
 'use strict';
 
-const debug = require('debug')(`${require('./package.json').name}:eslint-config`);
+const debug = require('debug')(
+  `${require(`${process.cwd()}/package.json`).name}:eslint-config`
+);
 const restrictedGlobals = require('confusing-browser-globals');
 
 module.exports = {

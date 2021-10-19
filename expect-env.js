@@ -1,7 +1,9 @@
 'use strict';
 /* eslint-disable no-console */
 
-const debug = require('debug')(`${require('./package.json').name}:expect-env`);
+const debug = require('debug')(
+  `${require(`${process.cwd()}/package.json`).name}:expect-env`
+);
 
 const DEFAULT_VALUE_REGEX = [/^.*$/, /.*/];
 

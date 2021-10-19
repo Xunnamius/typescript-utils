@@ -5,7 +5,9 @@ const pkg = require('./package.json');
 const read = require('fs').promises.readFile;
 const execa = require('execa');
 
-const debug = require('debug')(`${require('./package.json').name}:spellcheck-commit`);
+const debug = require('debug')(
+  `${require(`${process.cwd()}/package.json`).name}:spellcheck-commit`
+);
 
 const tryToRead = async (path) => {
   try {

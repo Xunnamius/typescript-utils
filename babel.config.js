@@ -4,7 +4,7 @@
 
 // ? https://nodejs.org/en/about/releases
 const NODE_LTS = 'maintained node versions';
-const pkgName = require('./package.json').name;
+const pkgName = require(`${process.cwd()}/package.json`).name;
 const debug = require('debug')(`${pkgName}:babel-config`);
 
 // ? Fix relative local imports referencing package.json (.dist/esm/...)

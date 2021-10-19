@@ -1,7 +1,7 @@
 'use strict';
 
 const debug = require('debug')(
-  `${require('./package.json').name}:semantic-release-config`
+  `${require(`${process.cwd()}/package.json`).name}:semantic-release-config`
 );
 
 // TODO: turn this into @xunnamius/semantic-release-projector-config
