@@ -9,6 +9,6 @@
     "checkJs": false,
     "allowJs": false,
     "emitDeclarationOnly": true,
-    "rootDir": "./"
+    "rootDir": "../"
   }
 }

@@ -32,7 +32,7 @@
     "./package.json": "./package.json"
   },
   "main": "./dist/index.js",
-  "types": "./dist/types/src/index.d.ts",
+  "types": "./dist/types/all-types/src/index.d.ts",
   "files": [
     "/dist",
     "/LICENSE",
