@@ -44,6 +44,6 @@ Represents any class.
 [2]: AnyClass.md#constructor
 [3]: AnyClass.md#prototype
 [4]:
-  https://github.com/Xunnamius/typescript-utils/blob/c647e58/packages/types/src/index.ts#L50
+  https://github.com/Xunnamius/typescript-utils/blob/3881362/packages/types/src/index.ts#L50
 [5]:
-  https://github.com/Xunnamius/typescript-utils/blob/c647e58/packages/types/src/index.ts#L48
+  https://github.com/Xunnamius/typescript-utils/blob/3881362/packages/types/src/index.ts#L48
