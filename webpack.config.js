@@ -15,6 +15,7 @@ const IMPORT_ALIASES = {
   universe: `${cwd}/src/`,
   multiverse: `${__dirname}/lib/`,
   testverse: `${__dirname}/test/`,
+  pkgverse: `${__dirname}/packages/`,
   externals: `${__dirname}/external-scripts/`,
   types: `${__dirname}/types/`,
   package: `${cwd}/package.json`
