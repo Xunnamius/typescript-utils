@@ -29,4 +29,4 @@ Generic success JSON result object.
 [1]: ../README.md
 [2]: JsonSuccess.md#success
 [3]:
-  https://github.com/Xunnamius/typescript-utils/blob/7612400/packages/types/src/index.ts#L15
+  https://github.com/Xunnamius/typescript-utils/blob/4a7406f/packages/types/src/index.ts#L15

@@ -1,6 +1,6 @@
 {
   "name": "@xunnamius/next-types",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Various TypeScript utility types and typed functions for Next.js-based projects",
   "keywords": [
     "type",
