@@ -98,7 +98,7 @@ module.exports = {
           'CHANGELOG.md',
           'docs'
         ],
-        message: 'release: ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
+        message: `release: ${targetPkgName}@\${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`
       }
     ],
     ['@semantic-release/github']
