@@ -83,6 +83,7 @@
     "source-map-support": "^0.5.20",
     "spellchecker": "^3.7.1",
     "text-extensions": "^2.4.0",
+    "tsconfig-replace-paths": "github:xunnamius/tsconfig-replace-paths",
     "type-fest": "^2.5.1",
     "typedoc": "^0.22.6",
     "typedoc-plugin-markdown": "^3.11.3",
