@@ -30,7 +30,7 @@
     "./package.json": "./package.json"
   },
   "main": "./dist/index.js",
-  "types": "./dist/types/next-types/src/index.d.ts",
+  "types": "./dist/types/packages/next-types/src/index.d.ts",
   "files": [
     "/dist",
     "/LICENSE",
