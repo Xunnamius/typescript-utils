@@ -25,12 +25,15 @@
   "type": "commonjs",
   "exports": {
     ".": {
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/index.js",
       "default": "./dist/index.js"
     },
     "./package": "./package.json",
     "./package.json": "./package.json"
   },
   "main": "./dist/index.js",
+  "module": "./dist/esm/index.mjs",
   "types": "./dist/types/packages/jest-types/src/index.d.ts",
   "files": [
     "/dist",

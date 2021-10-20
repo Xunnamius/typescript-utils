@@ -23,6 +23,8 @@
   "type": "commonjs",
   "exports": {
     ".": {
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/index.js",
       "default": "./dist/index.js"
     },
     "./package": "./package.json",
