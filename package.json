@@ -57,7 +57,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-jest": "^25.2.2",
     "execa": "^5.1.1",
-    "husky": "^7.0.2",
+    "husky": "^7.0.4",
     "jest": "^27.3.1",
     "jest-circus": "^27.3.1",
     "jest-extended": "^1.1.0",
