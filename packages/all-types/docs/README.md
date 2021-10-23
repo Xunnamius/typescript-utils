@@ -193,18 +193,18 @@ Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
 [9]: README.md#withconfig
 [10]: README.md#asmockedfunction
 [11]:
-  https://github.com/Xunnamius/typescript-utils/blob/4a7406f/packages/types/src/index.ts#L42
+  https://github.com/Xunnamius/typescript-utils/blob/f0160fb/packages/types/src/index.ts#L42
 [12]:
-  https://github.com/Xunnamius/typescript-utils/blob/4a7406f/packages/types/src/index.ts#L36
+  https://github.com/Xunnamius/typescript-utils/blob/f0160fb/packages/types/src/index.ts#L36
 [13]:
-  https://github.com/Xunnamius/typescript-utils/blob/4a7406f/packages/types/src/index.ts#L57
+  https://github.com/Xunnamius/typescript-utils/blob/f0160fb/packages/types/src/index.ts#L57
 [14]:
-  https://github.com/Xunnamius/typescript-utils/blob/4a7406f/packages/types/src/index.ts#L9
+  https://github.com/Xunnamius/typescript-utils/blob/f0160fb/packages/types/src/index.ts#L9
 [15]:
-  https://github.com/Xunnamius/typescript-utils/blob/4a7406f/packages/types/src/index.ts#L31
+  https://github.com/Xunnamius/typescript-utils/blob/f0160fb/packages/types/src/index.ts#L31
 [16]:
-  https://github.com/Xunnamius/typescript-utils/blob/4a7406f/packages/next-types/src/types.ts#L7
+  https://github.com/Xunnamius/typescript-utils/blob/f0160fb/packages/next-types/src/types.ts#L7
 [17]:
-  https://github.com/Xunnamius/typescript-utils/blob/4a7406f/packages/jest-types/src/utils.ts#L7
+  https://github.com/Xunnamius/typescript-utils/blob/f0160fb/packages/jest-types/src/utils.ts#L7
 [18]:
-  https://github.com/Xunnamius/typescript-utils/blob/4a7406f/packages/jest-types/src/utils.ts#L8
+  https://github.com/Xunnamius/typescript-utils/blob/f0160fb/packages/jest-types/src/utils.ts#L8
