@@ -2,19 +2,8 @@
 // * Every now and then, we adopt best practices from CRA
 // * https://tinyurl.com/yakv4ggx
 
-// ? https://nodejs.org/en/about/releases
-const NODE_LTS = 'maintained node versions';
 const pkgName = require(`${process.cwd()}/package.json`).name;
 const debug = require('debug')(`${pkgName}:babel-config`);
-
-// ? Fix relative local imports referencing package.json (.dist/esm/...)
-const transformRenameImport = [
-  'transform-rename-import',
-  {
-    // ? See: https://bit.ly/38hFTa8
-    replacements: [{ original: 'package', replacement: `${pkgName}/package.json` }]
-  }
-];
 
 module.exports = {
   parserOpts: { strictMode: true },
@@ -51,14 +40,8 @@ module.exports = {
     // * Used by `npm run build`
     production: {
       presets: [
-        [
-          '@babel/preset-env',
-          {
-            // ? https://github.com/babel/babel-loader/issues/521#issuecomment-441466991
-            //modules: false,
-            targets: NODE_LTS
-          }
-        ],
+        // ? https://nodejs.org/en/about/releases
+        ['@babel/preset-env', { targets: 'maintained node versions' }],
         ['@babel/preset-typescript', { allowDeclareFields: true }]
         // ? Minification is handled by Webpack
       ]
@@ -69,27 +52,6 @@ module.exports = {
         ['@babel/preset-env', { targets: { node: true } }],
         ['@babel/preset-typescript', { allowDeclareFields: true }]
         // ? Minification is handled by Webpack
-      ],
-      plugins: [transformRenameImport]
-    },
-    // * Used for compiling ESM code output somewhere in ./dist
-    esm: {
-      presets: [
-        [
-          '@babel/preset-env',
-          {
-            // ? https://babeljs.io/docs/en/babel-preset-env#modules
-            modules: false,
-            targets: NODE_LTS
-          }
-        ],
-        ['@babel/preset-typescript', { allowDeclareFields: true }]
-        // ? The end user will handle minification
-      ],
-      plugins: [
-        // ? Ensure all local imports without extensions now end in .mjs
-        ['add-import-extension', { extension: 'mjs' }],
-        transformRenameImport
       ]
     }
   }

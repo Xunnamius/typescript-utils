@@ -11,6 +11,8 @@ const cwd = process.env.PKGROOT;
 const pkgName = require(`${cwd}/package.json`).name;
 const debug = require('debug')(`${pkgName}:webpack-config`);
 
+// ! If changed, also update these aliases in tsconfig.json,
+// ! jest.config.js, next.config.ts, and .eslintrc.js
 const IMPORT_ALIASES = {
   universe: `${cwd}/src/`,
   multiverse: `${__dirname}/lib/`,
@@ -83,8 +85,8 @@ const externals = [
   }
 ];
 
-const libConfig = {
-  name: 'lib',
+const libCjsConfig = {
+  name: 'cjs',
   mode: 'production',
   target: 'node',
   node: false,
@@ -93,10 +95,10 @@ const libConfig = {
 
   output: {
     filename: 'index.js',
-    path: `${cwd}/dist`,
-    // ! ▼ Only required for libraries
-    // ! ▼ Note: ESM outputs are handled by Babel ONLY!
-    libraryTarget: 'commonjs2'
+    path: `${cwd}/dist/cjs`,
+    library: {
+      type: 'commonjs2'
+    }
   },
 
   externals,
@@ -113,6 +115,49 @@ const libConfig = {
     extensions: ['.ts', '.wasm', '.mjs', '.cjs', '.js', '.json'],
     // ! If changed, also update these aliases in tsconfig.json,
     // ! jest.config.js, next.config.ts, and .eslintrc.js
+    alias: IMPORT_ALIASES
+  },
+  module: {
+    rules: [{ test: /\.(ts|js)x?$/, loader: 'babel-loader', exclude: /node_modules/ }]
+  },
+  optimization: { usedExports: true },
+  plugins: [...envPlugins]
+};
+
+const libEsmConfig = {
+  name: 'esm',
+  mode: 'production',
+  target: 'node',
+  node: false,
+
+  entry: `${cwd}/src/index.ts`,
+
+  output: {
+    module: true,
+    filename: 'index.mjs',
+    path: `${cwd}/dist/esm`,
+    chunkFormat: 'module',
+    library: {
+      type: 'module'
+    }
+  },
+
+  experiments: {
+    outputModule: true
+  },
+
+  externals,
+  externalsPresets: { node: true },
+
+  stats: {
+    orphanModules: true,
+    providedExports: true,
+    usedExports: true,
+    errorDetails: true
+  },
+
+  resolve: {
+    extensions: ['.ts', '.wasm', '.mjs', '.cjs', '.js', '.json'],
     alias: IMPORT_ALIASES
   },
   module: {
@@ -210,5 +255,5 @@ const libConfig = {
   ]
 }; */
 
-module.exports = [libConfig /*externalsConfig , cliConfig*/];
+module.exports = [libCjsConfig, libEsmConfig /*externalsConfig , cliConfig*/];
 debug('exports: %O', module.exports);
