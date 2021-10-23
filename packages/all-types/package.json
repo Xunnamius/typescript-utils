@@ -1,6 +1,6 @@
 {
   "name": "@xunnamius/all-types",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A unified entry point for various TypeScript utility types and typed functions",
   "keywords": [
     "type",
