@@ -4,13 +4,14 @@ All notable changes to this project will be documented in this auto-generated
 file. The format is based on [Conventional Commits][34]; this project adheres to
 [Semantic Versioning][35].
 
-### [1.0.3][36] (2021-10-23)
+### [1.0.4][36] (2021-10-26)
 
 #### ⚙️ Build system
 
-- Output actual ESM distributable ([92b3d3a][2])
+- **package-ws:** fix changelog regeneration bug in conventional-changelog-cli
+  ([ca04091][37])
 
-### [1.0.2][1] (2021-10-23)
+### [1.0.3][1] (2021-10-23)
 
 #### ⚙️ Build system
 
@@ -69,7 +70,7 @@ file. The format is based on [Conventional Commits][34]; this project adheres to
 - **webpack:** compile output with webpack ([d521c0e][33])
 
 [1]:
-  https://github.com/Xunnamius/typescript-utils/compare/next-types@1.0.2...next-types@1.0.2
+  https://github.com/Xunnamius/typescript-utils/compare/next-types@1.0.2...next-types@1.0.3
 [2]:
   https://github.com/Xunnamius/typescript-utils/commit/92b3d3a3b2941443f169d47f4af5a52fea7f56e1
 [3]:
@@ -137,4 +138,6 @@ file. The format is based on [Conventional Commits][34]; this project adheres to
 [34]: https://conventionalcommits.org
 [35]: https://semver.org
 [36]:
-  https://github.com/Xunnamius/typescript-utils/compare/next-types@1.0.2...next-types@1.0.3
+  https://github.com/Xunnamius/typescript-utils/compare/next-types@1.0.3...next-types@1.0.4
+[37]:
+  https://github.com/Xunnamius/typescript-utils/commit/ca040911eef4fca128c377b479298a5414984035
