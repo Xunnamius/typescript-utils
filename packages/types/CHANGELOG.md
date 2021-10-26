@@ -4,13 +4,14 @@ All notable changes to this project will be documented in this auto-generated
 file. The format is based on [Conventional Commits][41]; this project adheres to
 [Semantic Versioning][42].
 
-### [1.1.5][43] (2021-10-23)
+### [1.1.6][43] (2021-10-26)
 
 #### ⚙️ Build system
 
-- Output actual ESM distributable ([92b3d3a][2])
+- **package-ws:** fix changelog regeneration bug in conventional-changelog-cli
+  ([ca04091][44])
 
-### [1.1.4][1] (2021-10-23)
+### [1.1.5][1] (2021-10-23)
 
 #### ⚙️ Build system
 
@@ -101,7 +102,7 @@ file. The format is based on [Conventional Commits][41]; this project adheres to
   ([3bdb38d][40])
 
 [1]:
-  https://github.com/Xunnamius/typescript-utils/compare/types@1.1.4...types@1.1.4
+  https://github.com/Xunnamius/typescript-utils/compare/types@1.1.4...types@1.1.5
 [2]:
   https://github.com/Xunnamius/typescript-utils/commit/92b3d3a3b2941443f169d47f4af5a52fea7f56e1
 [3]:
@@ -183,4 +184,6 @@ file. The format is based on [Conventional Commits][41]; this project adheres to
 [41]: https://conventionalcommits.org
 [42]: https://semver.org
 [43]:
-  https://github.com/Xunnamius/typescript-utils/compare/types@1.1.4...types@1.1.5
+  https://github.com/Xunnamius/typescript-utils/compare/types@1.1.5...types@1.1.6
+[44]:
+  https://github.com/Xunnamius/typescript-utils/commit/ca040911eef4fca128c377b479298a5414984035
