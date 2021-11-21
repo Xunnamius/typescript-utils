@@ -1,5 +1,6 @@
 import type { AnyFunction } from 'pkgverse/types/src';
-import '@types/jest';
+// ? Pull in jest type definitions without importing jest or causing errors
+import type {} from 'jest';
 
 /**
  * Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
