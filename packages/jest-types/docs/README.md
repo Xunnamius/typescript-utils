@@ -138,7 +138,7 @@ Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
 
 #### Defined in
 
-[jest-types/src/utils.ts:7][15]
+[jest-types/src/utils.ts:8][15]
 
 ▸ **asMockedFunction**<`T`>(`fn`): `jest.MockedFunction`<`T`>
 
@@ -160,7 +160,7 @@ Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
 
 #### Defined in
 
-[jest-types/src/utils.ts:8][16]
+[jest-types/src/utils.ts:9][16]
 
 [1]: interfaces/AnyClass.md
 [2]: interfaces/JsonError.md
@@ -172,16 +172,16 @@ Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
 [8]: README.md#noinfer
 [9]: README.md#asmockedfunction
 [10]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L42
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L42
 [11]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L36
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L36
 [12]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L57
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L57
 [13]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L9
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L9
 [14]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L31
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L31
 [15]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/jest-types/src/utils.ts#L7
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/jest-types/src/utils.ts#L8
 [16]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/jest-types/src/utils.ts#L8
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/jest-types/src/utils.ts#L9
