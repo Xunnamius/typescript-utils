@@ -144,14 +144,14 @@ object.
 [8]: README.md#noinfer
 [9]: README.md#withconfig
 [10]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L42
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L42
 [11]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L36
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L36
 [12]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L57
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L57
 [13]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L9
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L9
 [14]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L31
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L31
 [15]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/next-types/src/types.ts#L7
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/next-types/src/types.ts#L7
