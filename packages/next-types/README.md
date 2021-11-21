@@ -20,8 +20,6 @@
 
 # @xunnamius/next-types
 
-<!-- TODO: -->
-
 - [Install][1]
 - [Usage][2]
 - [Type Glossary][3]
@@ -141,7 +139,6 @@ information.
 [link-bundlephobia]:
   https://bundlephobia.com/result?p=@xunnamius/next-types
   'Package size (minified and gzipped)'
-[package-json]: package.json
 [docs]: docs
 [choose-new-issue]:
   https://github.com/xunnamius/typescript-utils/issues/new/choose
