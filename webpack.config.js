@@ -3,7 +3,7 @@
 // This webpack config is used to transpile src to dist, compile externals,
 // compile executables, etc
 
-const { EnvironmentPlugin, DefinePlugin /* , BannerPlugin */ } = require('webpack');
+const { EnvironmentPlugin, DefinePlugin, BannerPlugin } = require('webpack');
 const { verifyEnvironment } = require('./expect-env');
 const nodeExternals = require('webpack-node-externals');
 
@@ -58,11 +58,19 @@ try {
 debug('sanitized process env: %O', sanitizedProcessEnv);
 verifyEnvironment();
 
-const envPlugins = [
+const envPlugins = ({ esm /*: boolean */ }) => [
   // ? NODE_ENV is not a "default" (unlike below) but an explicit overwrite
   new DefinePlugin({
     'process.env.NODE_ENV': JSON.stringify(nodeEnv)
   }),
+  // ? NODE_ESM is true when we're compiling in ESM mode (useful in source)
+  ...(esm
+    ? [
+        new DefinePlugin({
+          'process.env.NODE_ESM': String(esm)
+        })
+      ]
+    : []),
   // ? Load our .env results as the defaults (overridden by process.env)
   new EnvironmentPlugin({ ...sanitizedEnv, ...sanitizedProcessEnv }),
   // ? Create shim process.env for undefined vars
@@ -71,16 +79,15 @@ const envPlugins = [
   new DefinePlugin({ 'process.env': '{}' })
 ];
 
-const externals = [
-  'next-server/dist/server/api-utils.js',
-  nodeExternals(),
+const externals = ({ esm /*: boolean */ }) => [
+  nodeExternals({ importType: esm ? 'node-commonjs' : 'commonjs' }),
   ({ request }, cb) => {
     if (request == 'package') {
       // ? Externalize special "package" (alias of package.json) imports
-      cb(null, `commonjs ${pkgName}/package.json`);
+      cb(null, `${esm ? 'node-commonjs' : 'commonjs'} ${pkgName}/package.json`);
     } else if (/\.json$/.test(request)) {
-      // ? Externalize all other .json imports (require()'d as commonjs modules)
-      cb(null, `commonjs ${request}`);
+      // ? Externalize all other .json imports
+      cb(null, `${esm ? 'node-commonjs' : 'commonjs'} ${request}`);
     } else cb();
   }
 ];
@@ -101,7 +108,7 @@ const libCjsConfig = {
     }
   },
 
-  externals,
+  externals: externals({ esm: false }),
   externalsPresets: { node: true },
 
   stats: {
@@ -121,7 +128,7 @@ const libCjsConfig = {
     rules: [{ test: /\.(ts|js)x?$/, loader: 'babel-loader', exclude: /node_modules/ }]
   },
   optimization: { usedExports: true },
-  plugins: [...envPlugins]
+  plugins: [...envPlugins({ esm: false })]
 };
 
 const libEsmConfig = {
@@ -146,7 +153,7 @@ const libEsmConfig = {
     outputModule: true
   },
 
-  externals,
+  externals: externals({ esm: true }),
   externalsPresets: { node: true },
 
   stats: {
@@ -158,16 +165,18 @@ const libEsmConfig = {
 
   resolve: {
     extensions: ['.ts', '.wasm', '.mjs', '.cjs', '.js', '.json'],
+    // ! If changed, also update these aliases in tsconfig.json,
+    // ! jest.config.js, next.config.ts, and .eslintrc.js
     alias: IMPORT_ALIASES
   },
   module: {
     rules: [{ test: /\.(ts|js)x?$/, loader: 'babel-loader', exclude: /node_modules/ }]
   },
   optimization: { usedExports: true },
-  plugins: [...envPlugins]
+  plugins: [...envPlugins({ esm: true })]
 };
 
-/* const externalsConfig = {
+const externalsConfig = {
   name: 'externals',
   mode: 'production',
   target: 'node',
@@ -182,7 +191,7 @@ const libEsmConfig = {
     path: `${cwd}/external-scripts/bin`
   },
 
-  externals,
+  externals: externals({ esm: false }),
   externalsPresets: { node: true },
 
   stats: {
@@ -209,13 +218,13 @@ const libEsmConfig = {
   },
   optimization: { usedExports: true },
   plugins: [
-    ...envPlugins,
+    ...envPlugins({ esm: false }),
     // * ▼ For non-bundled externals, make entry file executable w/ shebang
     new BannerPlugin({ banner: '#!/usr/bin/env node', raw: true, entryOnly: true })
   ]
-}; */
+};
 
-/* const cliConfig = {
+const cliConfig = {
   name: 'cli',
   mode: 'production',
   target: 'node',
@@ -228,7 +237,7 @@ const libEsmConfig = {
     path: `${cwd}/dist`
   },
 
-  externals,
+  externals: externals({ esm: false }),
   externalsPresets: { node: true },
 
   stats: {
@@ -249,11 +258,12 @@ const libEsmConfig = {
   },
   optimization: { usedExports: true },
   plugins: [
-    ...envPlugins,
+    ...envPlugins({ esm: false }),
     // * ▼ For bundled CLI applications, make entry file executable w/ shebang
     new BannerPlugin({ banner: '#!/usr/bin/env node', raw: true, entryOnly: true })
   ]
-}; */
+};
 
-module.exports = [libCjsConfig, libEsmConfig /*externalsConfig , cliConfig*/];
+void externalsConfig, cliConfig;
+module.exports = [libCjsConfig, libEsmConfig];
 debug('exports: %O', module.exports);
