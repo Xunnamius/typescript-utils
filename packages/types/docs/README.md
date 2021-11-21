@@ -123,12 +123,12 @@ Useful for type hinting and enforcing typechecking with generics.
 [7]: README.md#jsonregexp
 [8]: README.md#noinfer
 [9]:
-  https://github.com/Xunnamius/typescript-utils/blob/04529cb/packages/types/src/index.ts#L42
+  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L42
 [10]:
-  https://github.com/Xunnamius/typescript-utils/blob/04529cb/packages/types/src/index.ts#L36
+  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L36
 [11]:
-  https://github.com/Xunnamius/typescript-utils/blob/04529cb/packages/types/src/index.ts#L57
+  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L57
 [12]:
-  https://github.com/Xunnamius/typescript-utils/blob/04529cb/packages/types/src/index.ts#L9
+  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L9
 [13]:
-  https://github.com/Xunnamius/typescript-utils/blob/04529cb/packages/types/src/index.ts#L31
+  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L31
