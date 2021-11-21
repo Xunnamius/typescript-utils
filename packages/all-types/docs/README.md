@@ -158,7 +158,7 @@ Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
 
 #### Defined in
 
-[jest-types/src/utils.ts:7][17]
+[jest-types/src/utils.ts:8][17]
 
 ▸ **asMockedFunction**<`T`>(`fn`): `jest.MockedFunction`<`T`>
 
@@ -180,7 +180,7 @@ Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
 
 #### Defined in
 
-[jest-types/src/utils.ts:8][18]
+[jest-types/src/utils.ts:9][18]
 
 [1]: interfaces/AnyClass.md
 [2]: interfaces/JsonError.md
@@ -193,18 +193,18 @@ Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
 [9]: README.md#withconfig
 [10]: README.md#asmockedfunction
 [11]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L42
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L42
 [12]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L36
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L36
 [13]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L57
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L57
 [14]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L9
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L9
 [15]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/types/src/index.ts#L31
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L31
 [16]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/next-types/src/types.ts#L7
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/next-types/src/types.ts#L7
 [17]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/jest-types/src/utils.ts#L7
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/jest-types/src/utils.ts#L8
 [18]:
-  https://github.com/Xunnamius/typescript-utils/blob/eac23c7/packages/jest-types/src/utils.ts#L8
+  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/jest-types/src/utils.ts#L9
