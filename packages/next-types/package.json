@@ -48,6 +48,7 @@
     "list-tasks": "node -e 'console.log(Object.keys(require(\"./package.json\").scripts).join(\"\\n\"))'"
   },
   "peerDependencies": {
+    "@xunnamius/types": ">=1",
     "next": ">=9"
   },
   "engines": {
