@@ -19,7 +19,7 @@ export interface JsonSuccess extends JsonObject {
  * Generic failure JSON result object.
  */
 export interface JsonError extends JsonObject {
-  message: string;
+  error: string;
   success: false;
 }
 
