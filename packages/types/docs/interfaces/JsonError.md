@@ -41,6 +41,6 @@ Generic failure JSON result object.
 [2]: JsonError.md#error
 [3]: JsonError.md#success
 [4]:
-  https://github.com/Xunnamius/typescript-utils/blob/61c7a9f/packages/types/src/index.ts#L22
+  https://github.com/Xunnamius/typescript-utils/blob/c36f455/packages/types/src/index.ts#L22
 [5]:
-  https://github.com/Xunnamius/typescript-utils/blob/61c7a9f/packages/types/src/index.ts#L23
+  https://github.com/Xunnamius/typescript-utils/blob/c36f455/packages/types/src/index.ts#L23
