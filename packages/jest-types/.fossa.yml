@@ -1,6 +1,6 @@
 version: 3
 project:
-  name: typescript-utils (monorepo)
+  name: '@xunnamius/jest-types'
 targets:
   only:
     - type: npm
