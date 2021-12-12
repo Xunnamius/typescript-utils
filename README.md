@@ -29,28 +29,18 @@ itself][2], or [TypeScript itself][3].
 npm install --save-dev @xunnamius/types
 ```
 
-[@xunnamius/next-types][7]: for general and [next][4]-specific TypeScript
-utilities:
+[@xunnamius/next-types][7]: for [next][4]-specific TypeScript utilities:
 
 ```bash
-# This package comes with @xunnamius/types baked in
+# This package comes with @xunnamius/types as a peer dependency
 npm install --save-dev @xunnamius/next-types
 ```
 
-[@xunnamius/jest-types][8]: for general and [jest][4]-specific TypeScript
-utilities:
+[@xunnamius/jest-types][8]: for [jest][4]-specific TypeScript utilities:
 
 ```bash
-# This package comes with @xunnamius/types baked in
+# This package comes with @xunnamius/types as a peer dependency
 npm install --save-dev @xunnamius/jest-types
-```
-
-[@xunnamius/all-types][9]: for _all of the above_ TypeScript utilities in one
-package:
-
-```bash
-# This package comes with all @xunnamius/*-types packages baked in
-npm install --save-dev @xunnamius/all-types
 ```
 
 ## Usage
@@ -117,4 +107,3 @@ information.
 [6]: packages/types
 [7]: packages/next-types
 [8]: packages/jest-types
-[9]: packages/all-types
