@@ -14,14 +14,14 @@ Generic failure JSON result object.
 
 ### Properties
 
-- [message][2]
+- [error][2]
 - [success][3]
 
 ## Properties
 
-### message
+### error
 
-• **message**: `string`
+• **error**: `string`
 
 #### Defined in
 
@@ -38,9 +38,9 @@ Generic failure JSON result object.
 [index.ts:23][5]
 
 [1]: ../README.md
-[2]: JsonError.md#message
+[2]: JsonError.md#error
 [3]: JsonError.md#success
 [4]:
-  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L22
+  https://github.com/Xunnamius/typescript-utils/blob/cc9f718/packages/types/src/index.ts#L22
 [5]:
-  https://github.com/Xunnamius/typescript-utils/blob/f089f57/packages/types/src/index.ts#L23
+  https://github.com/Xunnamius/typescript-utils/blob/cc9f718/packages/types/src/index.ts#L23
