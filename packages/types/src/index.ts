@@ -33,13 +33,13 @@ export type NoInfer<T> = [T][T extends any ? 0 : never];
 /**
  * Represents any object key/index type.
  */
-export declare type AnyKey = string | number | symbol;
+export type AnyKey = string | number | symbol;
 
 /**
  * Represents any function type.
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export declare type AnyFunction = (...args: any[]) => unknown;
+export type AnyFunction = (...args: any[]) => unknown;
 
 /**
  * Represents any class.
