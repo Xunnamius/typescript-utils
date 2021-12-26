@@ -2,9 +2,55 @@
 
 ### Functions
 
-- [asMockedFunction][1]
+- [asMockedClass][1]
+- [asMockedFunction][2]
 
 ## Functions
+
+### asMockedClass
+
+▸ **asMockedClass**<`T`>(): `jest.MockedClass`<`T`>
+
+Returns `classConstructor` (via `jest.fn()`) wrapped with Jest mock type
+definitions.
+
+#### Type parameters
+
+| Name | Type                              |
+| :--- | :-------------------------------- |
+| `T`  | extends `Constructable` = `never` |
+
+#### Returns
+
+`jest.MockedClass`<`T`>
+
+#### Defined in
+
+[index.ts:17][3]
+
+▸ **asMockedClass**<`T`>(`constructor`): `jest.MockedClass`<`T`>
+
+#### Type parameters
+
+| Name | Type                    |
+| :--- | :---------------------- |
+| `T`  | extends `Constructable` |
+
+#### Parameters
+
+| Name          | Type |
+| :------------ | :--- |
+| `constructor` | `T`  |
+
+#### Returns
+
+`jest.MockedClass`<`T`>
+
+#### Defined in
+
+[index.ts:20][4]
+
+---
 
 ### asMockedFunction
 
@@ -24,7 +70,7 @@ Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
 
 #### Defined in
 
-[index.ts:8][2]
+[index.ts:7][5]
 
 ▸ **asMockedFunction**<`T`>(`fn`): `jest.MockedFunction`<`T`>
 
@@ -46,10 +92,15 @@ Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
 
 #### Defined in
 
-[index.ts:9][3]
+[index.ts:8][6]
 
-[1]: README.md#asmockedfunction
-[2]:
-  https://github.com/Xunnamius/typescript-utils/blob/c36f455/packages/jest-types/src/index.ts#L8
+[1]: README.md#asmockedclass
+[2]: README.md#asmockedfunction
 [3]:
-  https://github.com/Xunnamius/typescript-utils/blob/c36f455/packages/jest-types/src/index.ts#L9
+  https://github.com/Xunnamius/typescript-utils/blob/c8772e3/packages/jest-types/src/index.ts#L17
+[4]:
+  https://github.com/Xunnamius/typescript-utils/blob/c8772e3/packages/jest-types/src/index.ts#L20
+[5]:
+  https://github.com/Xunnamius/typescript-utils/blob/c8772e3/packages/jest-types/src/index.ts#L7
+[6]:
+  https://github.com/Xunnamius/typescript-utils/blob/c8772e3/packages/jest-types/src/index.ts#L8
