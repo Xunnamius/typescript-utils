@@ -3,7 +3,8 @@
   "workspaces": [
     "packages/types",
     "packages/jest-types",
-    "packages/next-types"
+    "packages/next-types",
+    "packages/mongo-types"
   ],
   "scripts": {
     "__test-repeat-all": "echo 'Repeating test suite [initializing]...'; (i=0; while [ \"$((( i += 1 ) <= 100 ))\" -ne 0 ]; do sleep 0.1 && echo \"\\r\\033[1A\\033[0KRepeating test suite [run $i/100]...\" && JEST_SILENT_REPORTER_SHOW_WARNINGS=true BABEL_ENV=test jest --reporters=jest-silent-reporter || exit; done) && echo \"All tests passed! Congrats!\"",
