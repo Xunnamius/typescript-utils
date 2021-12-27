@@ -22,7 +22,7 @@
 
 - [Install][1]
 - [Usage][2]
-- [Type Glossary][3]
+- [Type and Constant Glossary][3]
   - [WithConfig][8]
 - [Function Glossary][4]
 - [Documentation][5]
@@ -41,7 +41,7 @@ npm install --save-dev @xunnamius/next-types
 
 ## Usage
 
-You can use this library's types in your TypeScript projects like so:
+You can use this library's exports in your TypeScript projects like so:
 
 ```TypeScript
 import type { NextApiHandler } from 'next';
@@ -52,10 +52,9 @@ import type { WithConfig } from '@xunnamius/next-types';
 const handler: WithConfig<NextApiHandler> = getHandler();
 ```
 
-## Type Glossary
+## Type and Constant Glossary
 
-In addition to those provided by [@xunnamius/types][9], this package makes the
-following types are available:
+This package exports the following:
 
 - [WithConfig][8]
 
@@ -147,10 +146,9 @@ information.
 [support]: /.github/SUPPORT.md
 [1]: #install
 [2]: #usage
-[3]: #type-glossary
+[3]: #type-and-constant-glossary
 [4]: #function-glossary
 [5]: #documentation
 [6]: #contributing-and-support
 [7]: https://nextjs.org/
 [8]: #withconfig
-[9]: ../types
