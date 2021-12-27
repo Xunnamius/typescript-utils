@@ -22,9 +22,10 @@
 
 - [Install][1]
 - [Usage][2]
-- [Type Glossary][3]
+- [Type and Constant Glossary][3]
 - [Function Glossary][4]
   - [asMockedFunction][8]
+  - [asMockedClass][9]
 - [Documentation][5]
 - [Contributing and Support][6]
 
@@ -41,7 +42,7 @@ npm install --save-dev @xunnamius/jest-types
 
 ## Usage
 
-You can use this library's types in your TypeScript projects like so:
+You can use this library's exports in your TypeScript projects like so:
 
 ```TypeScript
 import type { X } from '@xunnamius/jest-types'
@@ -49,20 +50,23 @@ import type { X } from '@xunnamius/jest-types'
 const x: X = 'y';
 ```
 
-## Type Glossary
+## Type and Constant Glossary
 
-The following types are available: (none yet)
+This package exports the following: (none yet)
 
 ## Function Glossary
 
 The following functions are available:
 
 - [asMockedFunction][8]
+- [asMockedClass][9]
 
 ### asMockedFunction
 
+> See [the docs][10] for interface description.
+
 This function returns `fn` or a function type `T` wrapped with Jest mock type
-definitions via `jest.fn()`.
+definitions via `jest.MockedFunction`.
 
 ```typescript
 import execa from 'execa';
@@ -71,7 +75,8 @@ import debugFactory from 'debug';
 import type { Debugger } from 'debug';
 import type { ExecaChildProcess } from 'execa';
 
-// ...
+jest.mock('execa');
+jest.mock('debug');
 
 const mockedExeca = asMockedFunction(execa);
 const mockedDebug = asMockedFunction<Debugger>();
@@ -81,21 +86,61 @@ const mockedDebug = asMockedFunction<Debugger>();
 beforeEach(() => {
   mockedDebug.extend =
     asMockedFunction<Debugger['extend']>().mockReturnValue(mockedDebug);
+
   asMockedFunction(debugFactory).mockReturnValue(mockedDebug);
+
+  mockedExeca.mockImplementation(
+    () =>
+      Promise.resolve({
+        /* ... */
+      }) as ExecaChildProcess<Buffer>
+  );
 });
 
 // ...
 
-mockedExeca.mockImplementation(
-  () =>
-    Promise.resolve({
-      /* ... */
-    }) as ExecaChildProcess<Buffer>
-);
+it('throws and outputs to CLI when doing a thing that fails', async () => {
+  expect.hasAssertions();
 
-// ...
+  doThingThatFails(); // <== calls execa internally
 
-expect(mockedDebug).toBeCalledWith(expect.stringContaining('failed!'));
+  expect(mockedDebug).toBeCalledWith(expect.stringContaining('failed!'));
+});
+```
+
+### asMockedClass
+
+> See [the docs][11] for interface description.
+
+This function returns returns `classConstructor` or a constructor type `T`
+wrapped with Jest mock type definitions via `jest.MockedClass`.
+
+```typescript
+import { Db, MongoClient } from 'mongodb';
+
+jest.mock('mongodb');
+
+const mockMongoClient = asMockedClass(MongoClient);
+
+beforeEach(() => {
+  mockMongoClient.connect = jest.fn((url: string) =>
+    Promise.resolve(
+      new (class {
+        // ...
+      })() as unknown as MongoClient
+    )
+  );
+});
+
+it("creates client only if it doesn't already exist", async () => {
+  expect.hasAssertions();
+
+  getMemoizedClientConnection();
+  getMemoizedClientConnection();
+  getMemoizedClientConnection();
+
+  expect(mockMongoClient.connect).toHaveBeenCalledTimes(1);
+});
 ```
 
 ## Documentation
@@ -168,9 +213,12 @@ information.
 [support]: /.github/SUPPORT.md
 [1]: #install
 [2]: #usage
-[3]: #type-glossary
+[3]: #type-and-constant-glossary
 [4]: #function-glossary
 [5]: #documentation
 [6]: #contributing-and-support
 [7]: https://jestjs.io/
 [8]: #asmockedfunction
+[9]: #asmockedclass
+[10]: ./docs/README.md#asmockedfunction
+[11]: ./docs/README.md#asmockedclass
