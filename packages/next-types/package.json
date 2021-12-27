@@ -1,7 +1,7 @@
 {
   "name": "@xunnamius/next-types",
   "version": "1.0.6",
-  "description": "Various TypeScript utility types and typed functions for Next.js-based projects",
+  "description": "Various constants, utility types, and typed functions for Next.js-based projects",
   "keywords": [
     "type",
     "types",
@@ -48,7 +48,6 @@
     "list-tasks": "node -e 'console.log(Object.keys(require(\"./package.json\").scripts).join(\"\\n\"))'"
   },
   "peerDependencies": {
-    "@xunnamius/types": ">=1",
     "next": ">=9"
   },
   "engines": {
