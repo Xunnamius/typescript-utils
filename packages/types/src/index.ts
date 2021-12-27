@@ -133,3 +133,30 @@ export type HttpStatusCode =
   | 555
   | 598
   | 599;
+
+/**
+ * All valid HTTP2 methods.
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+ */
+export const validHttpMethods = [
+  'GET',
+  'HEAD',
+  'POST',
+  'PUT',
+  'DELETE',
+  'CONNECT',
+  'OPTIONS',
+  'TRACE',
+  'PATCH'
+] as const;
+
+/**
+ * A point in time represented by the number of milliseconds (ms) since the unix
+ * epoch (January 1, 1970 00:00:00 UTC).
+ *
+ * @see
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now
+ */
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface UnixEpochMs extends Number {}

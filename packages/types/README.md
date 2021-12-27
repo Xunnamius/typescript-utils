@@ -22,15 +22,17 @@
 
 - [Install][1]
 - [Usage][2]
-- [Type Glossary][3]
+- [Type and Constant Glossary][3]
   - [JsonRegExp][4]
   - [JsonSuccess][5]
   - [JsonError][6]
   - [HttpStatusCode][7]
+  - [ValidHttpMethod][21]
   - [AnyKey][8]
   - [AnyFunction][9]
   - [AnyClass][10]
   - [NoInfer][12]
+  - [UnixEpochMs][22]
 - [Function Glossary][11]
 - [Documentation][13]
 - [Contributing and Support][14]
@@ -48,7 +50,7 @@ npm install --save-dev @xunnamius/types
 
 ## Usage
 
-You can use this library's types in your TypeScript projects like so:
+You can use this library's exports in your TypeScript projects like so:
 
 ```TypeScript
 import type { HttpStatusCode } from '@xunnamius/types'
@@ -56,18 +58,20 @@ import type { HttpStatusCode } from '@xunnamius/types'
 const status: HttpStatusCode = 404;
 ```
 
-## Type Glossary
+## Type and Constant Glossary
 
-The following types are available:
+This package exports the following:
 
 - [JsonRegExp][4]
 - [JsonSuccess][5]
 - [JsonError][6]
 - [HttpStatusCode][7]
+- [ValidHttpMethod][21]
 - [AnyKey][8]
 - [AnyFunction][9]
 - [AnyClass][10]
 - [NoInfer][12]
+- [UnixEpochMs][22]
 
 ### JsonRegExp
 
@@ -142,6 +146,37 @@ const o: { [key: AnyKey]: unknown } = {
 };
 ```
 
+### ValidHttpMethod
+
+This type represents any valid [HTTP request method][23].
+
+```typescript
+import fetch from 'isomorphic-unfetch';
+import type { ValidHttpMethod } from '@xunnamius/types';
+
+const method: ValidHttpMethod = 'PATCH';
+const res = await fetch('https://google.com', { method });
+```
+
+These method name strings can also be enumerated via the `validHttpMethod` array
+instance.
+
+```typescript
+import { validHttpMethods } from '@xunnamius/types';
+
+const isValidMethod = (method: string): method is ValidHttpMethod => {
+  return validHttpMethods.includes(method as ValidHttpMethod);
+};
+
+const maybeValidMethod: string = getMethod();
+
+if (isValidMethod(maybeValidMethod)) {
+  // maybeValidMethod is of type ValidHttpMethod within this block
+} else {
+  // maybeValidMethod is of type string within this block
+}
+```
+
 ### AnyFunction
 
 This type represents any function type.
@@ -197,6 +232,20 @@ See also:
 - [https://github.com/Microsoft/TypeScript/issues/14829][18]
 - [https://www.typescriptlang.org/docs/handbook/2/generics.html#hello-world-of-generics][19]
 - [https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-3.html#generic-parameter-defaults][20]
+
+### UnixEpochMs
+
+This type represents a point in time defined as the number of milliseconds (ms)
+since the unix epoch (January 1, 1970 00:00:00 UTC).
+
+```typescript
+import type { UnixEpochMs } from '@xunnamius/types';
+
+export type ImportantType = {
+  importantThing: unknown;
+  createdAt: UnixEpochMs;
+};
+```
 
 ## Function Glossary
 
@@ -272,7 +321,7 @@ information.
 [support]: /.github/SUPPORT.md
 [1]: #install
 [2]: #usage
-[3]: #type-glossary
+[3]: #type-and-constant-glossary
 [4]: #jsonregexp
 [5]: #jsonsuccess
 [6]: #jsonerror
@@ -293,3 +342,6 @@ information.
   https://www.typescriptlang.org/docs/handbook/2/generics.html#hello-world-of-generics
 [20]:
   https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-3.html#generic-parameter-defaults
+[21]: #validhttpmethod
+[22]: #unixepochms
+[23]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
