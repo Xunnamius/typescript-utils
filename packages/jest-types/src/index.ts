@@ -1,5 +1,7 @@
 import type { AnyFunction } from '@xunnamius/types';
-// ? Pull in jest type definitions without importing jest or causing errors
+
+// ? So typedoc-plugin-markdown can pick them up
+export type { AnyFunction };
 
 /**
  * Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
