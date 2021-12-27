@@ -1,7 +1,7 @@
 {
   "name": "@xunnamius/jest-types",
   "version": "1.1.0",
-  "description": "Various TypeScript utility types and typed functions for Jest-based projects",
+  "description": "Various constants, utility types, and typed functions for Jest-based projects",
   "keywords": [
     "type",
     "types",
