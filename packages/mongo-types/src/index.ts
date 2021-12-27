@@ -52,6 +52,7 @@ export type InternalAuthEntry = {
  * The shape of a bearer token entry in the well-known "auth" collection.
  */
 export interface InternalAuthBearerEntry extends InternalAuthEntry {
+  scheme: 'bearer';
   token: {
     bearer: string;
   };
