@@ -1,9 +1,39 @@
 ## Table of contents
 
+### Type aliases
+
+- [AnyFunction][1]
+
 ### Functions
 
-- [asMockedClass][1]
-- [asMockedFunction][2]
+- [asMockedClass][2]
+- [asMockedFunction][3]
+
+## Type aliases
+
+### AnyFunction
+
+Ƭ **AnyFunction**: (...`args`: `any`\[]) => `unknown`
+
+#### Type declaration
+
+▸ (...`args`): `unknown`
+
+Represents any function type.
+
+##### Parameters
+
+| Name      | Type     |
+| :-------- | :------- |
+| `...args` | `any`\[] |
+
+##### Returns
+
+`unknown`
+
+#### Defined in
+
+types/dist/types/packages/types/src/index.d.ts:37
 
 ## Functions
 
@@ -26,7 +56,7 @@ definitions.
 
 #### Defined in
 
-[index.ts:17][3]
+[jest-types/src/index.ts:19][4]
 
 ▸ **asMockedClass**<`T`>(`constructor`): `jest.MockedClass`<`T`>
 
@@ -48,7 +78,7 @@ definitions.
 
 #### Defined in
 
-[index.ts:20][4]
+[jest-types/src/index.ts:22][5]
 
 ---
 
@@ -60,9 +90,9 @@ Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
 
 #### Type parameters
 
-| Name | Type                            |
-| :--- | :------------------------------ |
-| `T`  | extends `AnyFunction` = `never` |
+| Name | Type                                 |
+| :--- | :----------------------------------- |
+| `T`  | extends [`AnyFunction`][1] = `never` |
 
 #### Returns
 
@@ -70,15 +100,15 @@ Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
 
 #### Defined in
 
-[index.ts:7][5]
+[jest-types/src/index.ts:9][6]
 
 ▸ **asMockedFunction**<`T`>(`fn`): `jest.MockedFunction`<`T`>
 
 #### Type parameters
 
-| Name | Type                  |
-| :--- | :-------------------- |
-| `T`  | extends `AnyFunction` |
+| Name | Type                       |
+| :--- | :------------------------- |
+| `T`  | extends [`AnyFunction`][1] |
 
 #### Parameters
 
@@ -92,15 +122,16 @@ Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
 
 #### Defined in
 
-[index.ts:8][6]
+[jest-types/src/index.ts:10][7]
 
-[1]: README.md#asmockedclass
-[2]: README.md#asmockedfunction
-[3]:
-  https://github.com/Xunnamius/typescript-utils/blob/c8772e3/packages/jest-types/src/index.ts#L17
+[1]: README.md#anyfunction
+[2]: README.md#asmockedclass
+[3]: README.md#asmockedfunction
 [4]:
-  https://github.com/Xunnamius/typescript-utils/blob/c8772e3/packages/jest-types/src/index.ts#L20
+  https://github.com/Xunnamius/typescript-utils/blob/4f7daa8/packages/jest-types/src/index.ts#L19
 [5]:
-  https://github.com/Xunnamius/typescript-utils/blob/c8772e3/packages/jest-types/src/index.ts#L7
+  https://github.com/Xunnamius/typescript-utils/blob/4f7daa8/packages/jest-types/src/index.ts#L22
 [6]:
-  https://github.com/Xunnamius/typescript-utils/blob/c8772e3/packages/jest-types/src/index.ts#L8
+  https://github.com/Xunnamius/typescript-utils/blob/4f7daa8/packages/jest-types/src/index.ts#L9
+[7]:
+  https://github.com/Xunnamius/typescript-utils/blob/4f7daa8/packages/jest-types/src/index.ts#L10

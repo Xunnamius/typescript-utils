@@ -24,9 +24,9 @@ Generic success JSON result object.
 
 #### Defined in
 
-[index.ts:15][3]
+[packages/types/src/index.ts:15][3]
 
 [1]: ../README.md
 [2]: JsonSuccess.md#success
 [3]:
-  https://github.com/Xunnamius/typescript-utils/blob/e0ed947/packages/types/src/index.ts#L15
+  https://github.com/Xunnamius/typescript-utils/blob/4f7daa8/packages/types/src/index.ts#L15

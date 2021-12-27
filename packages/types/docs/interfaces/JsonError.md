@@ -25,7 +25,7 @@ Generic failure JSON result object.
 
 #### Defined in
 
-[index.ts:22][4]
+[packages/types/src/index.ts:22][4]
 
 ---
 
@@ -35,12 +35,12 @@ Generic failure JSON result object.
 
 #### Defined in
 
-[index.ts:23][5]
+[packages/types/src/index.ts:23][5]
 
 [1]: ../README.md
 [2]: JsonError.md#error
 [3]: JsonError.md#success
 [4]:
-  https://github.com/Xunnamius/typescript-utils/blob/e0ed947/packages/types/src/index.ts#L22
+  https://github.com/Xunnamius/typescript-utils/blob/4f7daa8/packages/types/src/index.ts#L22
 [5]:
-  https://github.com/Xunnamius/typescript-utils/blob/e0ed947/packages/types/src/index.ts#L23
+  https://github.com/Xunnamius/typescript-utils/blob/4f7daa8/packages/types/src/index.ts#L23

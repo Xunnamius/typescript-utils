@@ -28,7 +28,7 @@ Represents any class.
 
 #### Defined in
 
-[index.ts:50][4]
+[packages/types/src/index.ts:50][4]
 
 ## Properties
 
@@ -38,12 +38,12 @@ Represents any class.
 
 #### Defined in
 
-[index.ts:48][5]
+[packages/types/src/index.ts:48][5]
 
 [1]: ../README.md
 [2]: AnyClass.md#constructor
 [3]: AnyClass.md#prototype
 [4]:
-  https://github.com/Xunnamius/typescript-utils/blob/e0ed947/packages/types/src/index.ts#L50
+  https://github.com/Xunnamius/typescript-utils/blob/4f7daa8/packages/types/src/index.ts#L50
 [5]:
-  https://github.com/Xunnamius/typescript-utils/blob/e0ed947/packages/types/src/index.ts#L48
+  https://github.com/Xunnamius/typescript-utils/blob/4f7daa8/packages/types/src/index.ts#L48
