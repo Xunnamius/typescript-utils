@@ -18,8 +18,8 @@ This monorepo contains generic utility types and helper functions for use in a
 variety of TypeScript projects.
 
 Before coming to this package to create new types, ensure your use case is not
-covered by [type-fest][1] (on which this monorepo is based), [Next.js
-itself][2], or [TypeScript itself][3].
+covered by [type-fest][1], [Next.js itself][2], [MongoDB's Node.js driver][12],
+or [TypeScript itself][3].
 
 ## Install
 
@@ -32,20 +32,24 @@ npm install --save-dev @xunnamius/types
 [@xunnamius/next-types][7]: for [next][4]-specific TypeScript utilities:
 
 ```bash
-# This package comes with @xunnamius/types as a peer dependency
 npm install --save-dev @xunnamius/next-types
 ```
 
-[@xunnamius/jest-types][8]: for [jest][4]-specific TypeScript utilities:
+[@xunnamius/jest-types][8]: for [jest][9]-specific TypeScript utilities:
 
 ```bash
-# This package comes with @xunnamius/types as a peer dependency
 npm install --save-dev @xunnamius/jest-types
+```
+
+[@xunnamius/mongo-types][10]: for [MongoDb][11]-specific TypeScript utilities:
+
+```bash
+npm install --save-dev @xunnamius/mongo-types
 ```
 
 ## Usage
 
-You can use this library's types in your TypeScript projects like so:
+You can use this library's exports in your TypeScript projects like so:
 
 ```TypeScript
 import type { HttpStatusCode } from '@xunnamius/types'
@@ -107,3 +111,7 @@ information.
 [6]: packages/types
 [7]: packages/next-types
 [8]: packages/jest-types
+[9]: https://www.npmjs.com/package/jest
+[10]: packages/mongo-types
+[11]: https://www.npmjs.com/package/mongodb
+[12]: https://docs.mongodb.com/drivers/node/current/fundamentals/typescript/
