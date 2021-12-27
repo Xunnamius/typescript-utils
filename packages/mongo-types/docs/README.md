@@ -75,7 +75,7 @@ The shape of an entry in the well-known "limited log" collection.
 
 #### Defined in
 
-[packages/mongo-types/src/index.ts:75][13]
+[packages/mongo-types/src/index.ts:76][13]
 
 ---
 
@@ -98,7 +98,7 @@ The shape of an entry in the well-known "request log" collection.
 
 #### Defined in
 
-[packages/mongo-types/src/index.ts:63][14]
+[packages/mongo-types/src/index.ts:64][14]
 
 ## Variables
 
@@ -181,18 +181,18 @@ token. This string cannot be used for authenticated HTTP access to the API.
 [10]: README.md#machine_bearer_token
 [11]: README.md#null_bearer_token
 [12]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L45
+  https://github.com/Xunnamius/typescript-utils/blob/10613b2/packages/mongo-types/src/index.ts#L45
 [13]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L75
+  https://github.com/Xunnamius/typescript-utils/blob/10613b2/packages/mongo-types/src/index.ts#L76
 [14]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L63
+  https://github.com/Xunnamius/typescript-utils/blob/10613b2/packages/mongo-types/src/index.ts#L64
 [15]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L32
+  https://github.com/Xunnamius/typescript-utils/blob/10613b2/packages/mongo-types/src/index.ts#L32
 [16]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L39
+  https://github.com/Xunnamius/typescript-utils/blob/10613b2/packages/mongo-types/src/index.ts#L39
 [17]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L25
+  https://github.com/Xunnamius/typescript-utils/blob/10613b2/packages/mongo-types/src/index.ts#L25
 [18]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L18
+  https://github.com/Xunnamius/typescript-utils/blob/10613b2/packages/mongo-types/src/index.ts#L18
 [19]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L12
+  https://github.com/Xunnamius/typescript-utils/blob/10613b2/packages/mongo-types/src/index.ts#L12

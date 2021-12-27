@@ -42,15 +42,15 @@ InternalAuthEntry.owner
 
 ### scheme
 
-• **scheme**: `string`
+• **scheme**: `"bearer"`
 
-#### Inherited from
+#### Overrides
 
 InternalAuthEntry.scheme
 
 #### Defined in
 
-[packages/mongo-types/src/index.ts:47][7]
+[packages/mongo-types/src/index.ts:55][7]
 
 ---
 
@@ -70,7 +70,7 @@ InternalAuthEntry.token
 
 #### Defined in
 
-[packages/mongo-types/src/index.ts:55][8]
+[packages/mongo-types/src/index.ts:56][8]
 
 [1]: ../README.md
 [2]: ../README.md#internalauthentry
@@ -78,8 +78,8 @@ InternalAuthEntry.token
 [4]: InternalAuthBearerEntry.md#scheme
 [5]: InternalAuthBearerEntry.md#token
 [6]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L46
+  https://github.com/Xunnamius/typescript-utils/blob/10613b2/packages/mongo-types/src/index.ts#L46
 [7]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L47
+  https://github.com/Xunnamius/typescript-utils/blob/10613b2/packages/mongo-types/src/index.ts#L55
 [8]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L55
+  https://github.com/Xunnamius/typescript-utils/blob/10613b2/packages/mongo-types/src/index.ts#L56

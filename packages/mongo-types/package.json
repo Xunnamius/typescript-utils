@@ -1,6 +1,6 @@
 {
   "name": "@xunnamius/mongo-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Various constants, utility types, and typed functions for MongoDB-based projects",
   "keywords": [
     "type",
