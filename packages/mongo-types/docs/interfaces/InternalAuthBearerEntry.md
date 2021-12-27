@@ -36,7 +36,7 @@ InternalAuthEntry.owner
 
 #### Defined in
 
-packages/mongo-types/src/index.ts:46
+[packages/mongo-types/src/index.ts:46][6]
 
 ---
 
@@ -50,7 +50,7 @@ InternalAuthEntry.scheme
 
 #### Defined in
 
-packages/mongo-types/src/index.ts:47
+[packages/mongo-types/src/index.ts:47][7]
 
 ---
 
@@ -70,10 +70,16 @@ InternalAuthEntry.token
 
 #### Defined in
 
-packages/mongo-types/src/index.ts:55
+[packages/mongo-types/src/index.ts:55][8]
 
 [1]: ../README.md
 [2]: ../README.md#internalauthentry
 [3]: InternalAuthBearerEntry.md#owner
 [4]: InternalAuthBearerEntry.md#scheme
 [5]: InternalAuthBearerEntry.md#token
+[6]:
+  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L46
+[7]:
+  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L47
+[8]:
+  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L55

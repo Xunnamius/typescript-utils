@@ -61,7 +61,7 @@ The shape of a basic credentials entry in the well-known "auth" collection.
 
 #### Defined in
 
-packages/mongo-types/src/index.ts:45
+[packages/mongo-types/src/index.ts:45][12]
 
 ---
 
@@ -75,7 +75,7 @@ The shape of an entry in the well-known "limited log" collection.
 
 #### Defined in
 
-packages/mongo-types/src/index.ts:75
+[packages/mongo-types/src/index.ts:75][13]
 
 ---
 
@@ -98,7 +98,7 @@ The shape of an entry in the well-known "request log" collection.
 
 #### Defined in
 
-packages/mongo-types/src/index.ts:63
+[packages/mongo-types/src/index.ts:63][14]
 
 ## Variables
 
@@ -112,7 +112,7 @@ to the API in production.
 
 #### Defined in
 
-packages/mongo-types/src/index.ts:32
+[packages/mongo-types/src/index.ts:32][15]
 
 ---
 
@@ -126,7 +126,7 @@ in production.
 
 #### Defined in
 
-packages/mongo-types/src/index.ts:39
+[packages/mongo-types/src/index.ts:39][16]
 
 ---
 
@@ -140,7 +140,7 @@ HTTP access to the API in production.
 
 #### Defined in
 
-packages/mongo-types/src/index.ts:25
+[packages/mongo-types/src/index.ts:25][17]
 
 ---
 
@@ -153,7 +153,7 @@ This string cannot be used for authenticated HTTP access to the API.
 
 #### Defined in
 
-packages/mongo-types/src/index.ts:18
+[packages/mongo-types/src/index.ts:18][18]
 
 ---
 
@@ -167,7 +167,7 @@ token. This string cannot be used for authenticated HTTP access to the API.
 
 #### Defined in
 
-packages/mongo-types/src/index.ts:12
+[packages/mongo-types/src/index.ts:12][19]
 
 [1]: interfaces/InternalAuthBearerEntry.md
 [2]: interfaces/UnixEpochMs.md
@@ -180,3 +180,19 @@ packages/mongo-types/src/index.ts:12
 [9]: README.md#dummy_bearer_token
 [10]: README.md#machine_bearer_token
 [11]: README.md#null_bearer_token
+[12]:
+  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L45
+[13]:
+  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L75
+[14]:
+  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L63
+[15]:
+  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L32
+[16]:
+  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L39
+[17]:
+  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L25
+[18]:
+  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L18
+[19]:
+  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/mongo-types/src/index.ts#L12
