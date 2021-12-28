@@ -14,10 +14,11 @@
 - [HttpStatusCode][7]
 - [JsonRegExp][8]
 - [NoInfer][9]
+- [ValidHttpMethod][10]
 
 ### Variables
 
-- [validHttpMethods][10]
+- [validHttpMethods][11]
 
 ## Type aliases
 
@@ -43,7 +44,7 @@ Represents any function type.
 
 #### Defined in
 
-[packages/types/src/index.ts:42][11]
+[packages/types/src/index.ts:42][12]
 
 ---
 
@@ -55,7 +56,7 @@ Represents any object key/index type.
 
 #### Defined in
 
-[packages/types/src/index.ts:36][12]
+[packages/types/src/index.ts:36][13]
 
 ---
 
@@ -76,7 +77,7 @@ HTTP status code 555.
 
 #### Defined in
 
-[packages/types/src/index.ts:57][13]
+[packages/types/src/index.ts:57][14]
 
 ---
 
@@ -98,7 +99,7 @@ those properties.
 
 #### Defined in
 
-[packages/types/src/index.ts:9][14]
+[packages/types/src/index.ts:9][15]
 
 ---
 
@@ -117,7 +118,17 @@ Useful for type hinting and enforcing typechecking with generics.
 
 #### Defined in
 
-[packages/types/src/index.ts:31][15]
+[packages/types/src/index.ts:31][16]
+
+---
+
+### ValidHttpMethod
+
+Ƭ **ValidHttpMethod**: typeof [`validHttpMethods`][11]\[`number`]
+
+#### Defined in
+
+[packages/types/src/index.ts:154][17]
 
 ## Variables
 
@@ -128,11 +139,11 @@ Useful for type hinting and enforcing typechecking with generics.
 
 All valid HTTP2 methods.
 
-**`see`** [https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods][16]
+**`see`** [https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods][18]
 
 #### Defined in
 
-[packages/types/src/index.ts:142][17]
+[packages/types/src/index.ts:142][19]
 
 [1]: interfaces/AnyClass.md
 [2]: interfaces/JsonError.md
@@ -143,17 +154,20 @@ All valid HTTP2 methods.
 [7]: README.md#httpstatuscode
 [8]: README.md#jsonregexp
 [9]: README.md#noinfer
-[10]: README.md#validhttpmethods
-[11]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/types/src/index.ts#L42
+[10]: README.md#validhttpmethod
+[11]: README.md#validhttpmethods
 [12]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/types/src/index.ts#L36
+  https://github.com/Xunnamius/typescript-utils/blob/21cb3ee/packages/types/src/index.ts#L42
 [13]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/types/src/index.ts#L57
+  https://github.com/Xunnamius/typescript-utils/blob/21cb3ee/packages/types/src/index.ts#L36
 [14]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/types/src/index.ts#L9
+  https://github.com/Xunnamius/typescript-utils/blob/21cb3ee/packages/types/src/index.ts#L57
 [15]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/types/src/index.ts#L31
-[16]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+  https://github.com/Xunnamius/typescript-utils/blob/21cb3ee/packages/types/src/index.ts#L9
+[16]:
+  https://github.com/Xunnamius/typescript-utils/blob/21cb3ee/packages/types/src/index.ts#L31
 [17]:
-  https://github.com/Xunnamius/typescript-utils/blob/41ff524/packages/types/src/index.ts#L142
+  https://github.com/Xunnamius/typescript-utils/blob/21cb3ee/packages/types/src/index.ts#L154
+[18]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+[19]:
+  https://github.com/Xunnamius/typescript-utils/blob/21cb3ee/packages/types/src/index.ts#L142
