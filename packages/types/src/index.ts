@@ -151,6 +151,8 @@ export const validHttpMethods = [
   'PATCH'
 ] as const;
 
+export type ValidHttpMethod = typeof validHttpMethods[number];
+
 /**
  * A point in time represented by the number of milliseconds (ms) since the unix
  * epoch (January 1, 1970 00:00:00 UTC).
