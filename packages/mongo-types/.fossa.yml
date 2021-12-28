@@ -1,6 +1,0 @@
-version: 3
-project:
-  name: '@xunnamius/mongo-types'
-targets:
-  only:
-    - type: npm

@@ -41,12 +41,6 @@ npm install --save-dev @xunnamius/next-types
 npm install --save-dev @xunnamius/jest-types
 ```
 
-[@xunnamius/mongo-types][10]: for [MongoDb][11]-specific TypeScript utilities:
-
-```bash
-npm install --save-dev @xunnamius/mongo-types
-```
-
 ## Usage
 
 You can use this library's exports in your TypeScript projects like so:
@@ -112,6 +106,4 @@ information.
 [7]: packages/next-types
 [8]: packages/jest-types
 [9]: https://www.npmjs.com/package/jest
-[10]: packages/mongo-types
-[11]: https://www.npmjs.com/package/mongodb
 [12]: https://docs.mongodb.com/drivers/node/current/fundamentals/typescript/
