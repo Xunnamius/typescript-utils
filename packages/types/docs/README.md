@@ -157,17 +157,17 @@ All valid HTTP2 methods.
 [10]: README.md#validhttpmethod
 [11]: README.md#validhttpmethods
 [12]:
-  https://github.com/Xunnamius/typescript-utils/blob/21cb3ee/packages/types/src/index.ts#L42
+  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/types/src/index.ts#L42
 [13]:
-  https://github.com/Xunnamius/typescript-utils/blob/21cb3ee/packages/types/src/index.ts#L36
+  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/types/src/index.ts#L36
 [14]:
-  https://github.com/Xunnamius/typescript-utils/blob/21cb3ee/packages/types/src/index.ts#L57
+  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/types/src/index.ts#L57
 [15]:
-  https://github.com/Xunnamius/typescript-utils/blob/21cb3ee/packages/types/src/index.ts#L9
+  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/types/src/index.ts#L9
 [16]:
-  https://github.com/Xunnamius/typescript-utils/blob/21cb3ee/packages/types/src/index.ts#L31
+  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/types/src/index.ts#L31
 [17]:
-  https://github.com/Xunnamius/typescript-utils/blob/21cb3ee/packages/types/src/index.ts#L154
+  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/types/src/index.ts#L154
 [18]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 [19]:
-  https://github.com/Xunnamius/typescript-utils/blob/21cb3ee/packages/types/src/index.ts#L142
+  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/types/src/index.ts#L142
