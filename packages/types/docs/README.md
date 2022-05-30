@@ -5,15 +5,15 @@
 - [AnyClass][1]
 - [JsonError][2]
 - [JsonSuccess][3]
-- [UnixEpochMs][4]
 
 ### Type aliases
 
-- [AnyFunction][5]
-- [AnyKey][6]
-- [HttpStatusCode][7]
-- [JsonRegExp][8]
-- [NoInfer][9]
+- [AnyFunction][4]
+- [AnyKey][5]
+- [HttpStatusCode][6]
+- [JsonRegExp][7]
+- [NoInfer][8]
+- [UnixEpochMs][9]
 - [ValidHttpMethod][10]
 
 ### Variables
@@ -44,7 +44,7 @@ Represents any function type.
 
 #### Defined in
 
-[packages/types/src/index.ts:42][12]
+[index.ts:42][12]
 
 ---
 
@@ -56,7 +56,7 @@ Represents any object key/index type.
 
 #### Defined in
 
-[packages/types/src/index.ts:36][13]
+[index.ts:36][13]
 
 ---
 
@@ -77,7 +77,7 @@ HTTP status code 555.
 
 #### Defined in
 
-[packages/types/src/index.ts:57][14]
+[index.ts:57][14]
 
 ---
 
@@ -99,7 +99,7 @@ those properties.
 
 #### Defined in
 
-[packages/types/src/index.ts:9][15]
+[index.ts:9][15]
 
 ---
 
@@ -118,7 +118,23 @@ Useful for type hinting and enforcing typechecking with generics.
 
 #### Defined in
 
-[packages/types/src/index.ts:31][16]
+[index.ts:31][16]
+
+---
+
+### UnixEpochMs
+
+Ƭ **UnixEpochMs**: `number`
+
+A point in time represented by the number of milliseconds (ms) since the unix
+epoch (January 1, 1970 00:00:00 UTC).
+
+**`see`**
+[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now][17]
+
+#### Defined in
+
+[index.ts:163][18]
 
 ---
 
@@ -128,46 +144,50 @@ Useful for type hinting and enforcing typechecking with generics.
 
 #### Defined in
 
-[packages/types/src/index.ts:154][17]
+[index.ts:154][19]
 
 ## Variables
 
 ### validHttpMethods
 
-• **validHttpMethods**: readonly \[`"GET"`, `"HEAD"`, `"POST"`, `"PUT"`,
+• `Const` **validHttpMethods**: readonly \[`"GET"`, `"HEAD"`, `"POST"`, `"PUT"`,
 `"DELETE"`, `"CONNECT"`, `"OPTIONS"`, `"TRACE"`, `"PATCH"`]
 
 All valid HTTP2 methods.
 
-**`see`** [https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods][18]
+**`see`** [https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods][20]
 
 #### Defined in
 
-[packages/types/src/index.ts:142][19]
+[index.ts:142][21]
 
 [1]: interfaces/AnyClass.md
 [2]: interfaces/JsonError.md
 [3]: interfaces/JsonSuccess.md
-[4]: interfaces/UnixEpochMs.md
-[5]: README.md#anyfunction
-[6]: README.md#anykey
-[7]: README.md#httpstatuscode
-[8]: README.md#jsonregexp
-[9]: README.md#noinfer
+[4]: README.md#anyfunction
+[5]: README.md#anykey
+[6]: README.md#httpstatuscode
+[7]: README.md#jsonregexp
+[8]: README.md#noinfer
+[9]: README.md#unixepochms
 [10]: README.md#validhttpmethod
 [11]: README.md#validhttpmethods
 [12]:
-  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/types/src/index.ts#L42
+  https://github.com/Xunnamius/typescript-utils/blob/bfaab1b/packages/types/src/index.ts#L42
 [13]:
-  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/types/src/index.ts#L36
+  https://github.com/Xunnamius/typescript-utils/blob/bfaab1b/packages/types/src/index.ts#L36
 [14]:
-  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/types/src/index.ts#L57
+  https://github.com/Xunnamius/typescript-utils/blob/bfaab1b/packages/types/src/index.ts#L57
 [15]:
-  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/types/src/index.ts#L9
+  https://github.com/Xunnamius/typescript-utils/blob/bfaab1b/packages/types/src/index.ts#L9
 [16]:
-  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/types/src/index.ts#L31
+  https://github.com/Xunnamius/typescript-utils/blob/bfaab1b/packages/types/src/index.ts#L31
 [17]:
-  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/types/src/index.ts#L154
-[18]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now
+[18]:
+  https://github.com/Xunnamius/typescript-utils/blob/bfaab1b/packages/types/src/index.ts#L163
 [19]:
-  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/types/src/index.ts#L142
+  https://github.com/Xunnamius/typescript-utils/blob/bfaab1b/packages/types/src/index.ts#L154
+[20]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+[21]:
+  https://github.com/Xunnamius/typescript-utils/blob/bfaab1b/packages/types/src/index.ts#L142
