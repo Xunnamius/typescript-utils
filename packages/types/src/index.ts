@@ -160,5 +160,4 @@ export type ValidHttpMethod = typeof validHttpMethods[number];
  * @see
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now
  */
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface UnixEpochMs extends Number {}
+export type UnixEpochMs = number;
