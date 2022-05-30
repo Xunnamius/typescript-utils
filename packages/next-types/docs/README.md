@@ -25,4 +25,4 @@ object.
 
 [1]: README.md#withconfig
 [2]:
-  https://github.com/Xunnamius/typescript-utils/blob/06152bc/packages/next-types/src/index.ts#L7
+  https://github.com/Xunnamius/typescript-utils/blob/bfaab1b/packages/next-types/src/index.ts#L7
