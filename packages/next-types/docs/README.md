@@ -1,10 +1,10 @@
 ## Table of contents
 
-### Type aliases
+### Type Aliases
 
 - [WithConfig][1]
 
-## Type aliases
+## Type Aliases
 
 ### WithConfig
 
@@ -25,4 +25,4 @@ object.
 
 [1]: README.md#withconfig
 [2]:
-  https://github.com/Xunnamius/typescript-utils/blob/bfaab1b/packages/next-types/src/index.ts#L7
+  https://github.com/Xunnamius/typescript-utils/blob/d642ac0/packages/next-types/src/index.ts#L7

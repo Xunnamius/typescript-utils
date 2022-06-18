@@ -1,6 +1,6 @@
 ## Table of contents
 
-### Type aliases
+### Type Aliases
 
 - [AnyFunction][1]
 
@@ -9,7 +9,7 @@
 - [asMockedClass][2]
 - [asMockedFunction][3]
 
-## Type aliases
+## Type Aliases
 
 ### AnyFunction
 
@@ -128,10 +128,10 @@ Returns `fn` (via `jest.fn()`) wrapped with Jest mock type definitions.
 [2]: README.md#asmockedclass
 [3]: README.md#asmockedfunction
 [4]:
-  https://github.com/Xunnamius/typescript-utils/blob/bfaab1b/packages/jest-types/src/index.ts#L19
+  https://github.com/Xunnamius/typescript-utils/blob/d642ac0/packages/jest-types/src/index.ts#L19
 [5]:
-  https://github.com/Xunnamius/typescript-utils/blob/bfaab1b/packages/jest-types/src/index.ts#L22
+  https://github.com/Xunnamius/typescript-utils/blob/d642ac0/packages/jest-types/src/index.ts#L22
 [6]:
-  https://github.com/Xunnamius/typescript-utils/blob/bfaab1b/packages/jest-types/src/index.ts#L9
+  https://github.com/Xunnamius/typescript-utils/blob/d642ac0/packages/jest-types/src/index.ts#L9
 [7]:
-  https://github.com/Xunnamius/typescript-utils/blob/bfaab1b/packages/jest-types/src/index.ts#L10
+  https://github.com/Xunnamius/typescript-utils/blob/d642ac0/packages/jest-types/src/index.ts#L10
