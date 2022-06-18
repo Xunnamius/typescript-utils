@@ -34,6 +34,7 @@
   - [NoInfer][12]
   - [UnixEpochMs][22]
 - [Function Glossary][11]
+  - [isError][24]
 - [Documentation][13]
 - [Contributing and Support][14]
 
@@ -249,7 +250,38 @@ export type ImportantType = {
 
 ## Function Glossary
 
-The following functions are available: (none yet)
+The following functions are available:
+
+- [isError][24]
+
+### isError
+
+> See [the docs][25] for interface description.
+
+This function is a [type guard][26] that returns `true` if the object has the
+`name` and `message` properties. Being a type guard, it also asserts the
+existence of these properties to TypeScript.
+
+```typescript
+export async function isValidAuthHeader(header: string) {
+  let scheme: AuthScheme;
+  let token: AuthToken;
+
+  try {
+    ({ scheme, token } = await getTokenFromString({
+      authString: header,
+      allowedSchemes
+    }));
+  } catch (e) {
+    return {
+      valid: false,
+      error: `bad Authorization header: ${isError(e) ? e.message : e}`
+    };
+  }
+
+  return { valid: true, scheme, token };
+}
+```
 
 ## Documentation
 
@@ -345,3 +377,7 @@ information.
 [21]: #validhttpmethod
 [22]: #unixepochms
 [23]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+[24]: #iserror
+[25]: ./docs/README.md#iserror
+[26]:
+  https://www.typescriptlang.org/docs/handbook/advanced-types.html#user-defined-type-guards

@@ -161,3 +161,18 @@ export type ValidHttpMethod = typeof validHttpMethods[number];
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now
  */
 export type UnixEpochMs = number;
+
+/**
+ * A type guard that returns `true` if the object has the `name` and `message`
+ * properties. Being a type guard, it also asserts the existence of these
+ * properties to TypeScript.
+ */
+export function isError(obj: unknown): obj is Error {
+  const err = obj as Error;
+  return (
+    !!err &&
+    typeof err == 'object' &&
+    typeof err.name == 'string' &&
+    typeof err.message == 'string'
+  );
+}
