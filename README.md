@@ -12,7 +12,7 @@
 
 <!-- prettier-ignore-end -->
 
-# typescript-utils
+# typescript-utils (@-xun/types)
 
 This monorepo contains generic utility types and helper functions for use in a
 variety of TypeScript projects.
@@ -23,22 +23,22 @@ or [TypeScript itself][3].
 
 ## Install
 
-[@xunnamius/types][6]: for general TypeScript utilities:
+**@-xun/types**: for general TypeScript utilities:
 
 ```bash
-npm install --save-dev @xunnamius/types
+npm install --save-dev @-xun/types
 ```
 
-[@xunnamius/next-types][7]: for [next][4]-specific TypeScript utilities:
+**@-xun/types/next**: for [next][4]-specific TypeScript utilities:
 
 ```bash
-npm install --save-dev @xunnamius/next-types
+npm install --save-dev @-xun/types/next
 ```
 
-[@xunnamius/jest-types][8]: for [jest][9]-specific TypeScript utilities:
+**@-xun/types/jest**: for [jest][9]-specific TypeScript utilities:
 
 ```bash
-npm install --save-dev @xunnamius/jest-types
+npm install --save-dev @-xun/types/jest
 ```
 
 ## Usage
@@ -46,14 +46,14 @@ npm install --save-dev @xunnamius/jest-types
 You can use this library's exports in your TypeScript projects like so:
 
 ```TypeScript
-import type { HttpStatusCode } from '@xunnamius/types'
+import type { HttpStatusCode } from '@-xun/types'
 
 const status: HttpStatusCode = 404;
 ```
 
 ## Documentation
 
-See [each package][5] for information on the types they make available and
+See the docs for information on the types they make available and
 further documentation.
 
 ### License
@@ -101,9 +101,5 @@ information.
 [2]: https://nextjs.org/docs/basic-features/typescript
 [3]: https://github.com/sindresorhus/type-fest#built-in-types
 [4]: https://github.com/vercel/next.js
-[5]: /packages
-[6]: packages/types
-[7]: packages/next-types
-[8]: packages/jest-types
 [9]: https://www.npmjs.com/package/jest
 [12]: https://docs.mongodb.com/drivers/node/current/fundamentals/typescript/
