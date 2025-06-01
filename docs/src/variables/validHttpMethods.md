@@ -8,7 +8,7 @@
 
 > `const` **validHttpMethods**: readonly \[`"GET"`, `"HEAD"`, `"POST"`, `"PUT"`, `"DELETE"`, `"CONNECT"`, `"OPTIONS"`, `"TRACE"`, `"PATCH"`\]
 
-Defined in: [src/index.ts:101](https://github.com/Xunnamius/typescript-utils/blob/8a2a41c11fece9aa42a510058a0d1fa9b8db5358/src/index.ts#L101)
+Defined in: [src/index.ts:101](https://github.com/Xunnamius/typescript-utils/blob/75c2c358a676a8ec7607aa5e7da9adfa540ed822/src/index.ts#L101)
 
 All valid HTTP2 methods.
 

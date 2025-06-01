@@ -8,7 +8,7 @@
 
 > **UnixEpochMs** = `number`
 
-Defined in: [src/index.ts:122](https://github.com/Xunnamius/typescript-utils/blob/8a2a41c11fece9aa42a510058a0d1fa9b8db5358/src/index.ts#L122)
+Defined in: [src/index.ts:122](https://github.com/Xunnamius/typescript-utils/blob/75c2c358a676a8ec7607aa5e7da9adfa540ed822/src/index.ts#L122)
 
 A point in time represented by the number of milliseconds (ms) since the unix
 epoch (January 1, 1970 00:00:00 UTC).
