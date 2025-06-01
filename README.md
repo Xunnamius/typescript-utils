@@ -1,109 +1,260 @@
-<!-- prettier-ignore-start -->
+<!-- symbiote-template-region-start 1 -->
 
-<!-- badges-start -->
+<p align="center" width="100%">
+  <img width="300" src="https://raw.githubusercontent.com/Xunnamius/typescript-utils/refs/heads/main/logo.png">
+</p>
 
-[![Black Lives Matter!][badge-blm]][link-blm]
-[![Last commit timestamp][badge-last-commit]][link-repo]
-[![Open issues][badge-issues]][link-issues]
-[![Pull requests][badge-pulls]][link-pulls]
-[![Uses Semantic Release!][badge-semantic-release]][link-semantic-release]
+<p align="center" width="100%">
+<!-- symbiote-template-region-end -->
+Various little things for improved TypeScript DX
+<!-- symbiote-template-region-start 2 -->
+</p>
 
-<!-- badges-end -->
+<hr />
 
-<!-- prettier-ignore-end -->
+<div align="center">
 
-# typescript-utils
+[![Black Lives Matter!][x-badge-blm-image]][x-badge-blm-link]
+[![Last commit timestamp][x-badge-lastcommit-image]][x-badge-repo-link]
+[![Codecov][x-badge-codecov-image]][x-badge-codecov-link]
+[![Source license][x-badge-license-image]][x-badge-license-link]
+[![Uses Semantic Release!][x-badge-semanticrelease-image]][x-badge-semanticrelease-link]
 
-This monorepo contains generic utility types and helper functions for use in a
-variety of TypeScript projects.
+[![NPM version][x-badge-npm-image]][x-badge-npm-link]
+[![Monthly Downloads][x-badge-downloads-image]][x-badge-downloads-link]
 
-Before coming to this package to create new types, ensure your use case is not
-covered by [type-fest][1], [Next.js itself][2], [MongoDB's Node.js driver][12],
-or [TypeScript itself][3].
+</div>
+
+<br />
+
+# typescript-utils (@-xun/types)
+
+<!-- symbiote-template-region-end -->
+
+Various little things for improved TypeScript DX.
+
+<!-- symbiote-template-region-start 3 -->
+
+---
+
+<!-- remark-ignore-start -->
+<!-- symbiote-template-region-end -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Install](#install)
+- [Usage](#usage)
+- [Appendix](#appendix)
+  - [Published Package Details](#published-package-details)
+  - [License](#license)
+- [Contributing and Support](#contributing-and-support)
+  - [Contributors](#contributors)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<!-- symbiote-template-region-start 4 -->
+<!-- remark-ignore-end -->
+
+<br />
 
 ## Install
 
-[@xunnamius/types][6]: for general TypeScript utilities:
+<!-- symbiote-template-region-end -->
 
-```bash
-npm install --save-dev @xunnamius/types
-```
+To install:
 
-[@xunnamius/next-types][7]: for [next][4]-specific TypeScript utilities:
-
-```bash
-npm install --save-dev @xunnamius/next-types
-```
-
-[@xunnamius/jest-types][8]: for [jest][9]-specific TypeScript utilities:
-
-```bash
-npm install --save-dev @xunnamius/jest-types
+```shell
+npm install @-xun/types
 ```
 
 ## Usage
 
 You can use this library's exports in your TypeScript projects like so:
 
-```TypeScript
-import type { HttpStatusCode } from '@xunnamius/types'
+```typescript
+import type { HttpStatusCode } from '@-xun/types';
 
 const status: HttpStatusCode = 404;
 ```
 
-## Documentation
+For a list of available types, see the [`docs`][x-repo-docs].
 
-See [each package][5] for information on the types they make available and
-further documentation.
+## Appendix
+
+<!-- symbiote-template-region-end -->
+<!-- TODO: additional appendix sections here -->
+<!-- symbiote-template-region-start 6 -->
+
+### Published Package Details
+
+This is a [CJS2 package][x-pkg-cjs-mojito] with statically-analyzable exports
+built by Babel for use in Node.js versions that are not end-of-life. For
+TypeScript users, this package supports both `"Node10"` and `"Node16"` module
+resolution strategies.
+
+<!-- symbiote-template-region-end -->
+<!-- TODO: additional package details here -->
+<!-- symbiote-template-region-start 7 -->
+
+<details><summary>Expand details</summary>
+
+That means both CJS2 (via `require(...)`) and ESM (via `import { ... } from ...`
+or `await import(...)`) source will load this package from the same entry points
+when using Node. This has several benefits, the foremost being: less code
+shipped/smaller package size, avoiding [dual package
+hazard][x-pkg-dual-package-hazard] entirely, distributables are not
+packed/bundled/uglified, a drastically less complex build process, and CJS
+consumers aren't shafted.
+
+Each entry point (i.e. `ENTRY`) in [`package.json`'s
+`exports[ENTRY]`][x-repo-package-json] object includes one or more [export
+conditions][x-pkg-exports-conditions]. These entries may or may not include: an
+[`exports[ENTRY].types`][x-pkg-exports-types-key] condition pointing to a type
+declaration file for TypeScript and IDEs, a
+[`exports[ENTRY].module`][x-pkg-exports-module-key] condition pointing to
+(usually ESM) source for Webpack/Rollup, a `exports[ENTRY].node` and/or
+`exports[ENTRY].default` condition pointing to (usually CJS2) source for Node.js
+`require`/`import` and for browsers and other environments, and [other
+conditions][x-pkg-exports-conditions] not enumerated here. Check the
+[package.json][x-repo-package-json] file to see which export conditions are
+supported.
+
+Note that, regardless of the [`{ "type": "..." }`][x-pkg-type] specified in
+[`package.json`][x-repo-package-json], any JavaScript files written in ESM
+syntax (including distributables) will always have the `.mjs` extension. Note
+also that [`package.json`][x-repo-package-json] may include the
+[`sideEffects`][x-pkg-side-effects-key] key, which is almost always `false` for
+optimal [tree shaking][x-pkg-tree-shaking] where appropriate.
+
+<!-- symbiote-template-region-end -->
+<!-- TODO: additional package details here -->
+<!-- symbiote-template-region-start 8 -->
+
+</details>
 
 ### License
 
-[![FOSSA analysis][badge-fossa]][link-fossa]
+<!-- symbiote-template-region-end -->
+
+See [LICENSE][x-repo-license].
+
+<!-- TODO: additional license information and/or sections here -->
+<!-- symbiote-template-region-start 9 -->
 
 ## Contributing and Support
 
-**[New issues][choose-new-issue] and [pull requests][pr-compare] are always
-welcome and greatly appreciated! 🤩** Just as well, you can [star 🌟 this
-project][link-repo] to let me know you found it useful! ✊🏿 Thank you!
+**[New issues][x-repo-choose-new-issue] and [pull requests][x-repo-pr-compare]
+are always welcome and greatly appreciated! 🤩** Just as well, you can [star 🌟
+this project][x-badge-repo-link] to let me know you found it useful! ✊🏿 Or [buy
+me a beer][x-repo-sponsor], I'd appreciate it. Thank you!
 
-See [CONTRIBUTING.md][contributing] and [SUPPORT.md][support] for more
-information.
+See [CONTRIBUTING.md][x-repo-contributing] and [SUPPORT.md][x-repo-support] for
+more information.
 
-[badge-blm]: https://xunn.at/badge-blm 'Join the movement!'
-[link-blm]: https://xunn.at/donate-blm
-[link-repo]: https://github.com/xunnamius/typescript-utils
-[badge-last-commit]:
-  https://img.shields.io/github/last-commit/xunnamius/typescript-utils
+<!-- symbiote-template-region-end -->
+<!-- TODO: additional contribution/support sections here -->
+<!-- symbiote-template-region-start 10 -->
+
+### Contributors
+
+<!-- symbiote-template-region-end -->
+<!-- symbiote-template-region-start root-package-only -->
+<!-- remark-ignore-start -->
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+<!-- remark-ignore-end -->
+
+Thanks goes to these wonderful people ([emoji
+key][x-repo-all-contributors-emojis]):
+
+<!-- remark-ignore-start -->
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://xunn.io/"><img src="https://avatars.githubusercontent.com/u/656017?v=4?s=100" width="100px;" alt="Bernard"/><br /><sub><b>Bernard</b></sub></a><br /><a href="#infra-Xunnamius" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Xunnamius/typescript-utils/commits?author=Xunnamius" title="Code">💻</a> <a href="https://github.com/Xunnamius/typescript-utils/commits?author=Xunnamius" title="Documentation">📖</a> <a href="#maintenance-Xunnamius" title="Maintenance">🚧</a> <a href="https://github.com/Xunnamius/typescript-utils/commits?author=Xunnamius" title="Tests">⚠️</a> <a href="https://github.com/Xunnamius/typescript-utils/pulls?q=is%3Apr+reviewed-by%3AXunnamius" title="Reviewed Pull Requests">👀</a></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td align="center" size="13px" colspan="7">
+        <img src="https://raw.githubusercontent.com/all-contributors/all-contributors-cli/1b8533af435da9854653492b1327a23a4dbd0a10/assets/logo-small.svg">
+          <a href="https://all-contributors.js.org/docs/en/bot/usage">Add your contributions</a>
+        </img>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- remark-ignore-end -->
+
+This project follows the [all-contributors][x-repo-all-contributors]
+specification. Contributions of any kind welcome!
+
+<!-- symbiote-template-region-end -->
+<!-- symbiote-template-region-start workspace-package-only -->
+<!-- (section elided by symbiote) -->
+<!-- symbiote-template-region-end -->
+
+[x-badge-blm-image]: https://xunn.at/badge-blm 'Join the movement!'
+[x-badge-blm-link]: https://xunn.at/donate-blm
+[x-badge-codecov-image]:
+  https://img.shields.io/codecov/c/github/Xunnamius/typescript-utils/main?style=flat-square&token=HWRIOBAAPW&flag=package.main_root
+  'Is this package well-tested?'
+[x-badge-codecov-link]: https://codecov.io/gh/Xunnamius/typescript-utils
+[x-badge-downloads-image]:
+  https://img.shields.io/npm/dm/@-xun/types?style=flat-square
+  'Number of times this package has been downloaded per month'
+[x-badge-downloads-link]: https://npmtrends.com/@-xun/types
+[x-badge-lastcommit-image]:
+  https://img.shields.io/github/last-commit/Xunnamius/typescript-utils?style=flat-square
   'Latest commit timestamp'
-[badge-issues]:
-  https://img.shields.io/github/issues/Xunnamius/typescript-utils
-  'Open issues'
-[link-issues]: https://github.com/Xunnamius/typescript-utils/issues?q=
-[badge-pulls]:
-  https://img.shields.io/github/issues-pr/xunnamius/typescript-utils
-  'Open pull requests'
-[link-pulls]: https://github.com/xunnamius/typescript-utils/pulls
-[badge-fossa]:
-  https://app.fossa.com/api/projects/custom%2B27276%2Fgit%40github.com%3AXunnamius%2Ftypescript-utils.git.svg?type=large
-  "Analysis of this package's license obligations"
-[link-fossa]:
-  https://app.fossa.com/projects/custom+27276%2Fgit@github.com:Xunnamius%2Ftypescript-utils.git
-[badge-semantic-release]:
-  https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[x-badge-license-image]:
+  https://img.shields.io/npm/l/@-xun/types?style=flat-square
+  "This package's source license"
+[x-badge-license-link]:
+  https://github.com/Xunnamius/typescript-utils/blob/main/LICENSE
+[x-badge-npm-image]:
+  https://xunn.at/npm-pkg-version/@-xun/types
+  'Install this package using npm or yarn!'
+[x-badge-npm-link]: https://npm.im/@-xun/types
+[x-badge-repo-link]: https://github.com/Xunnamius/typescript-utils
+[x-badge-semanticrelease-image]:
+  https://xunn.at/badge-semantic-release
   'This repo practices continuous integration and deployment!'
-[link-semantic-release]: https://github.com/semantic-release/semantic-release
-[choose-new-issue]:
-  https://github.com/xunnamius/typescript-utils/issues/new/choose
-[pr-compare]: https://github.com/xunnamius/typescript-utils/compare
-[contributing]: CONTRIBUTING.md
-[support]: .github/SUPPORT.md
-[1]: https://github.com/sindresorhus/type-fest
-[2]: https://nextjs.org/docs/basic-features/typescript
-[3]: https://github.com/sindresorhus/type-fest#built-in-types
-[4]: https://github.com/vercel/next.js
-[5]: /packages
-[6]: packages/types
-[7]: packages/next-types
-[8]: packages/jest-types
-[9]: https://www.npmjs.com/package/jest
-[12]: https://docs.mongodb.com/drivers/node/current/fundamentals/typescript/
+[x-badge-semanticrelease-link]:
+  https://github.com/semantic-release/semantic-release
+[x-pkg-cjs-mojito]:
+  https://dev.to/jakobjingleheimer/configuring-commonjs-es-modules-for-nodejs-12ed#publish-only-a-cjs-distribution-with-property-exports
+[x-pkg-dual-package-hazard]:
+  https://nodejs.org/api/packages.html#dual-package-hazard
+[x-pkg-exports-conditions]:
+  https://webpack.js.org/guides/package-exports#reference-syntax
+[x-pkg-exports-module-key]:
+  https://webpack.js.org/guides/package-exports#providing-commonjs-and-esm-version-stateless
+[x-pkg-exports-types-key]:
+  https://devblogs.microsoft.com/typescript/announcing-typescript-4-5-beta#packagejson-exports-imports-and-self-referencing
+[x-pkg-side-effects-key]:
+  https://webpack.js.org/guides/tree-shaking#mark-the-file-as-side-effect-free
+[x-pkg-tree-shaking]: https://webpack.js.org/guides/tree-shaking
+[x-pkg-type]:
+  https://github.com/nodejs/node/blob/8d8e06a345043bec787e904edc9a2f5c5e9c275f/doc/api/packages.md#type
+[x-repo-all-contributors]: https://github.com/all-contributors/all-contributors
+[x-repo-all-contributors-emojis]: https://allcontributors.org/docs/en/emoji-key
+[x-repo-choose-new-issue]:
+  https://github.com/Xunnamius/typescript-utils/issues/new/choose
+[x-repo-contributing]: /CONTRIBUTING.md
+[x-repo-docs]: docs
+[x-repo-license]: ./LICENSE
+[x-repo-package-json]: package.json
+[x-repo-pr-compare]: https://github.com/Xunnamius/typescript-utils/compare
+[x-repo-sponsor]: https://github.com/sponsors/Xunnamius
+[x-repo-support]: /.github/SUPPORT.md
