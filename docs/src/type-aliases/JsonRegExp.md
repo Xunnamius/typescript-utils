@@ -8,7 +8,7 @@
 
 > **JsonRegExp** = `object`
 
-Defined in: [src/index.ts:8](https://github.com/Xunnamius/typescript-utils/blob/75c2c358a676a8ec7607aa5e7da9adfa540ed822/src/index.ts#L8)
+Defined in: [src/index.ts:8](https://github.com/Xunnamius/typescript-utils/blob/1654ac66829395b52d544b89b0441d34ab22789d/src/index.ts#L8)
 
 `JSON.parse()` by default cannot serialize and deserialize regular
 expressions. With ES6, regular expressions can be represented by their
@@ -21,7 +21,7 @@ expression with respect to those properties.
 
 > `optional` **flags**: `string`
 
-Defined in: [src/index.ts:8](https://github.com/Xunnamius/typescript-utils/blob/75c2c358a676a8ec7607aa5e7da9adfa540ed822/src/index.ts#L8)
+Defined in: [src/index.ts:8](https://github.com/Xunnamius/typescript-utils/blob/1654ac66829395b52d544b89b0441d34ab22789d/src/index.ts#L8)
 
 ***
 
@@ -29,4 +29,4 @@ Defined in: [src/index.ts:8](https://github.com/Xunnamius/typescript-utils/blob/
 
 > **source**: `string`
 
-Defined in: [src/index.ts:8](https://github.com/Xunnamius/typescript-utils/blob/75c2c358a676a8ec7607aa5e7da9adfa540ed822/src/index.ts#L8)
+Defined in: [src/index.ts:8](https://github.com/Xunnamius/typescript-utils/blob/1654ac66829395b52d544b89b0441d34ab22789d/src/index.ts#L8)

@@ -15,6 +15,7 @@
 - [AnyFunction](type-aliases/AnyFunction.md)
 - [HttpStatusCode](type-aliases/HttpStatusCode.md)
 - [JsonRegExp](type-aliases/JsonRegExp.md)
+- [LiteralUnknownUnion](type-aliases/LiteralUnknownUnion.md)
 - [UnixEpochMs](type-aliases/UnixEpochMs.md)
 - [ValidHttpMethod](type-aliases/ValidHttpMethod.md)
 
