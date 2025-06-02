@@ -67,7 +67,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@-xun/symbiote": "^4.2.2"
+    "@-xun/symbiote": "^4.2.3"
   },
   "engines": {
     "node": "^20.18.0 || >=22.12.0"
