@@ -78,6 +78,8 @@ const status: HttpStatusCode = 404;
 
 For a list of available types, see the [`docs`][x-repo-docs].
 
+<!-- symbiote-template-region-start 5 -->
+
 ## Appendix
 
 <!-- symbiote-template-region-end -->
