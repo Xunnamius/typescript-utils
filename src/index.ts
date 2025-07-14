@@ -13,6 +13,11 @@ export type JsonRegExp = { source: string; flags?: string };
 export type AnyFunction = (...args: any[]) => any;
 
 /**
+ * Create a type that represents `T` or any function that returns `T`.
+ */
+export type Functionable<T> = T | ((...args: any[]) => T);
+
+/**
  * Represents any class.
  */
 export interface AnyClass {
