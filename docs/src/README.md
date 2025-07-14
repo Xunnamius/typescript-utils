@@ -13,6 +13,7 @@
 ## Type Aliases
 
 - [AnyFunction](type-aliases/AnyFunction.md)
+- [Functionable](type-aliases/Functionable.md)
 - [HttpStatusCode](type-aliases/HttpStatusCode.md)
 - [JsonRegExp](type-aliases/JsonRegExp.md)
 - [LiteralUnknownUnion](type-aliases/LiteralUnknownUnion.md)

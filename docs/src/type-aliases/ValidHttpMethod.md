@@ -8,4 +8,4 @@
 
 > **ValidHttpMethod** = *typeof* [`validHttpMethods`](../variables/validHttpMethods.md)\[`number`\]
 
-Defined in: [src/index.ts:113](https://github.com/Xunnamius/typescript-utils/blob/1654ac66829395b52d544b89b0441d34ab22789d/src/index.ts#L113)
+Defined in: [src/index.ts:118](https://github.com/Xunnamius/typescript-utils/blob/7d2364373072a98e170c9cce68346117a9a089a5/src/index.ts#L118)

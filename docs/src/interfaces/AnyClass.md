@@ -6,7 +6,7 @@
 
 # Interface: AnyClass
 
-Defined in: [src/index.ts:18](https://github.com/Xunnamius/typescript-utils/blob/1654ac66829395b52d544b89b0441d34ab22789d/src/index.ts#L18)
+Defined in: [src/index.ts:23](https://github.com/Xunnamius/typescript-utils/blob/7d2364373072a98e170c9cce68346117a9a089a5/src/index.ts#L23)
 
 Represents any class.
 
@@ -16,7 +16,7 @@ Represents any class.
 
 > **new AnyClass**(...`args`): `any`
 
-Defined in: [src/index.ts:20](https://github.com/Xunnamius/typescript-utils/blob/1654ac66829395b52d544b89b0441d34ab22789d/src/index.ts#L20)
+Defined in: [src/index.ts:25](https://github.com/Xunnamius/typescript-utils/blob/7d2364373072a98e170c9cce68346117a9a089a5/src/index.ts#L25)
 
 #### Parameters
 
@@ -34,4 +34,4 @@ Defined in: [src/index.ts:20](https://github.com/Xunnamius/typescript-utils/blob
 
 > **prototype**: `any`
 
-Defined in: [src/index.ts:19](https://github.com/Xunnamius/typescript-utils/blob/1654ac66829395b52d544b89b0441d34ab22789d/src/index.ts#L19)
+Defined in: [src/index.ts:24](https://github.com/Xunnamius/typescript-utils/blob/7d2364373072a98e170c9cce68346117a9a089a5/src/index.ts#L24)
