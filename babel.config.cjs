@@ -5,7 +5,6 @@ const { deepMergeConfig } = require('@-xun/symbiote/assets');
 
 const {
   assertEnvironment,
-  getNextJsBabelPreset,
   moduleExport
 } = require('@-xun/symbiote/assets/babel.config.cjs');
 
