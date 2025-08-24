@@ -23,3 +23,7 @@
 ## Variables
 
 - [validHttpMethods](variables/validHttpMethods.md)
+
+## Functions
+
+- [isRecord](functions/isRecord.md)

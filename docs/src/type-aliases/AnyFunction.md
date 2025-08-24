@@ -8,7 +8,7 @@
 
 > **AnyFunction** = (...`args`) => `any`
 
-Defined in: [src/index.ts:13](https://github.com/Xunnamius/typescript-utils/blob/7d2364373072a98e170c9cce68346117a9a089a5/src/index.ts#L13)
+Defined in: [src/index.ts:13](https://github.com/Xunnamius/typescript-utils/blob/6ee5f41475a2c203dd166e2a1981870136a34cdd/src/index.ts#L13)
 
 Represents any function type.
 
