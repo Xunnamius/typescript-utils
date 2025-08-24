@@ -142,3 +142,10 @@ export type LiteralUnknownUnion<LiteralType> =
   | (unknown & Record<never, never>)
   | null
   | undefined;
+
+/**
+ * Returns `true` if `o` is of type `Record<PropertyKey, unknown>`.
+ */
+export function isRecord(o: unknown): o is Record<PropertyKey, unknown> {
+  return !!o && typeof o === 'object' && !Array.isArray(o);
+}
